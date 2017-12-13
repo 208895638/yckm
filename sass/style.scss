@@ -17,6 +17,12 @@ $font_input:12px;//input的输入字体大小
 $hover_blue:#0071d3;//按钮鼠标移上的深蓝
 $cannot_click:#d5d5d5;//按钮不能点击的灰色
 $hover_gray:#f4f4f4;//鼠标移上变深灰
+
+//商品类型颜色
+$sp_orange:#fa9c22;//橙色
+$sp_blue:#48affb;//蓝色
+$sp_green:#09c770;//绿色
+$sp_green:#ff489a;//浅紫色
 .topBar{
     width: 100%;
     background: #0088ff;
@@ -146,13 +152,90 @@ $hover_gray:#f4f4f4;//鼠标移上变深灰
         }
     }
 }
+//底部样式
+.footer{
+    width: 100%;
+    padding-top: 70px;
+    p{
+        width: 100%;
+        text-align: center;
+        font: 13px/29px "微软雅黑";
+        color: #9a9a9a;
+        a{
+            font: 13px/29px "微软雅黑";
+            color: #9a9a9a;
+        }
+        .tousu{
+            padding-left: 24px;
+            background: url(../images/anquan.png) no-repeat left center;
+        }
+    }
+}
+//loading
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(000,000,000,0.2);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    h2{
+        width: 138px;
+        height: 32px;
+        background: #fff;
+        border-radius: 4px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font: 12px/32px "微软雅黑";
+        color: #000;
+        text-align: center;
+        font-size:0 ;
+        span,em{
+            display: inline-block;
+            vertical-align: middle;
+            font: 12px/32px "微软雅黑";
+        }
+        span{
+            margin-right: 10px;
+            animation: mymove 5s linear infinite;
+        }
+    }
+}
+//loading动画
+@keyframes mymove
+{
+from {transform:rotate(180deg);}
+to {transform:rotate(-180deg);}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+from {transform:rotate(180deg);}
+to {transform:rotate(-180deg);}
+}
+
+@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+from {transform:rotate(180deg);}
+to {transform:rotate(-180deg);}
+}
+
+@-o-keyframes mymove /* Opera */
+{
+from {transform:rotate(180deg);}
+to {transform:rotate(-180deg);}
+}
 // 买家中心样样式
 .container{
     width: 100%;
     background: #eeefef;
     margin-top: 22px;
     .lBox{
-        width: 10%;
+        width: 12%;
         margin:0 0.8% 0 3%;
         background: #ffffff;
         .customerCenter{
@@ -202,6 +285,219 @@ $hover_gray:#f4f4f4;//鼠标移上变深灰
                 em{
                     background: #5185b3;
                     margin-right: 0;
+                }
+            }
+        }
+        .setCusInfo{
+            padding-top: 4px;
+            dl{
+                dt,dd a{
+                    padding-left: 36%;
+                    font: 12px/36px "微软雅黑";
+                    color: #979797;
+                }
+                dd a{
+                    color: #000;
+                }
+                dd{
+                    border-left: 4px solid #fff;
+                }
+                dd:hover{
+                    border-left: 4px solid $color_blue;
+                    background: #ecf6ff;
+                }
+                .on{
+                     border-left: 4px solid $color_blue;
+                    background: #ecf6ff;
+                }
+            }
+            .shmj dt{
+                background: url(../images/hb.png) no-repeat 24% center;
+            }
+            .shdd dt{
+                background: url(../images/dd.png) no-repeat 24% center;
+            }
+            .shzh dt{
+                background: url(../images/zhzj.png) no-repeat 24% center;
+            }
+            .shdl dt{
+                background: url(../images/dltc.png) no-repeat 24% center;
+            }
+        }
+    }
+    .rBox{
+        width: 83%;
+        background: #fff;
+        .mjsy{
+            width: 100%;
+            .leftBox{
+                width: 69%;
+                margin-left: 1.7%;
+                .rmzq{
+                    h2{
+                        font: 20px/20px "微软雅黑";
+                        color: #000;
+                        border-left: 4px solid $color_blue;
+                        margin:18px 0;
+                        padding-left: 7px;
+                    }
+                    .rmCon{
+                        a{
+                          display: block;
+                          font: 13px/37px "微软雅黑";
+                          color: #000;
+                          padding:0 13px;   
+                          margin:7px 15px;
+                          border: 2px solid #ffb400;
+                          border-radius: 2px ;
+                        }
+                        .yellow{
+                            border: 2px solid #ffb400;
+                        }
+                        .blue{
+                            border: 2px solid #008aff;
+                        }
+                        .green{
+                            border: 2px solid #55c916;
+                        }
+                        .orange{
+                            border: 2px solid #ff5a00;
+                        }
+                    }
+                }
+                .jxtj,.zxsp{
+                    h2{
+                        font: 20px/20px "微软雅黑";
+                        color: #000;
+                        border-left: 4px solid $color_blue;
+                        margin:18px 0;
+                        padding-left: 7px;
+                    }
+                    .jxBox{
+                        .jssp{
+                            li{
+                                border-top: 1px solid #f1f1f1;
+                                border-bottom: 1px solid #f1f1f1;
+                                padding: 14px 0;
+                                a{
+                                    span,em,i,b,strong{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        font: 12px/21px "微软雅黑";
+                                    }
+                                    span{
+                                        width: 36px;
+                                        height: 21px;
+                                        background: $sp_orange;
+                                        border-radius: 10px;
+                                        font: 12px/21px "微软雅黑";
+                                        color: #fff;
+                                        text-align: center;
+                                        margin:0 13px ;
+                                    }
+                                    em{
+                                        width: 52%;
+                                        color: #000;
+                                    }
+                                    i{
+                                        width: 21%;
+                                        text-align: center;
+                                        color: #8c8c8c;
+                                    }
+                                    b{
+                                        width: 8%;
+                                        text-align: center;
+                                        color: #000;
+                                    }
+                                    strong{
+                                        width: 10%;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        color: $sp_orange;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            li:hover{
+                                background: #ecf6ff;
+                            }
+                        }
+                        .pagenation{
+                            text-align: center;
+                            font-size: 0;
+                            li{
+                                display: inline-block;
+                                vertical-align: top; 
+                                border: 1px solid $line_gray;
+                                width: 32px;
+                                margin:20px 6px;
+                                border-radius: 4px;
+                                a{
+                                    font: 12px/32px "微软雅黑";
+                                    color: #000;
+                                   display: block;
+                                }
+                            }
+                            .on{
+                                border: 1px solid $color_blue;
+                            }
+                            li:hover{
+                                border: 1px solid $color_blue;
+                            }
+                        }
+                        h3{
+                            text-align: center;
+                            font-size: 0;
+                            span,em{
+                                display: inline-block;
+                                vertical-align: middle;
+                                 font: 12px/68px "微软雅黑";
+                                color: $color_blue;
+                            }
+                            span{
+                               margin:0 5px;
+                            }
+                        }
+                    }
+                }
+                .zxsp{
+                    border-top: 10px solid #eeefef;
+                }
+            }
+            .rightBox{
+                width: 28%;
+                .ptgg,.mjbz{
+                    margin-left:16% ;
+                    h2{
+                        font: 20px/20px "微软雅黑";
+                        color: #000;
+                        border-left: 4px solid $color_blue;
+                        margin:18px 0;
+                        padding-left: 7px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                span,em{
+                                    font: 12px/31px "微软雅黑";
+                                    color: #000000;
+                                }
+                                span{
+                                    color: #919191;
+                                    margin-right: 10px;
+                                    
+                                }
+                                em{
+                                    width: 62%;
+                                }
+                            }
+                            a:hover{
+                                em{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
