@@ -227,7 +227,9 @@ img{
 	bottom: 0;
 	margin:auto;
 }
-
+.textL{
+	text-align: left;
+}
 
 
 

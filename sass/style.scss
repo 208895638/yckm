@@ -327,6 +327,7 @@ to {transform:rotate(-180deg);}
     }
     .rBox{
         width: 81%;
+        min-height: 600px;
         .mjsy{
             width: 100%;
             .leftBox{
@@ -508,6 +509,99 @@ to {transform:rotate(-180deg);}
                     }
                 }
             }
+        }
+    }
+}
+//目录分类页样式
+.mlfl{
+    width: 100%;
+    padding-top: 58px;
+    background: #fff;
+    height: 100%;
+    min-height: 500px;
+    h2{
+        width: 95%;
+        margin:5px auto;
+        font: 12px/34px "微软雅黑";
+        background: #e9f8ff;
+        border: 1px solid #a4c2dc;
+        text-indent: 10px;
+        a{
+            color: $color_3;
+            font-weight: bold;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    table{
+        width: 95%;
+        margin:5px auto;
+        td{
+            border:1px solid $line_gray;
+            text-align: center;
+            font: 12px/32px "微软雅黑";
+            color: #000000;
+            a{
+                color: #000000;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//我的收藏
+.myCollection{
+    width: 100%;
+    background: #fff;
+    h2{
+        width: 97%;
+        margin:0 auto;
+        font: 16px/66px "微软雅黑";
+        color: #000;
+        a{
+           padding-left: 24px;
+           background: url(../images/goback.png) no-repeat left center; 
+           margin-right: 10px;
+        }
+    }
+    table{
+        width: 97%;
+        margin:0 auto;
+        th{
+            font:12px/38px "微软雅黑" ;
+            color: #000;
+            font-weight: bold;
+            background: #f1f1f1;
+        }
+        td{
+            font: 12px/50px "微软雅黑";
+        }
+        .spxxTitle,.spxx{
+            width: 47%;
+        }
+        .kfqq{
+            width: 7%;
+        }
+        .mz,.sj{
+            width: 5%;
+        }
+        .mjcn{
+            width: 18%;
+        }
+        .spxx{
+                text-indent: 30px;
+            }
+        tr{
+            border-top: 1px solid #eeefef;
+            border-bottom: 1px solid #eeefef;
+            .spxxTitle{
+                text-indent: 30px;
+            }
+        }
+        tr:hover{
+            background: #ecf6ff;
         }
     }
 }

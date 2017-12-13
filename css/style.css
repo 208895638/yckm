@@ -245,7 +245,8 @@ body, html {
       .container .lBox .setCusInfo .shdl dt {
         background: url(../images/dltc.png) no-repeat 24% center; }
   .container .rBox {
-    width: 81%; }
+    width: 81%;
+    min-height: 600px; }
     .container .rBox .mjsy {
       width: 100%; }
       .container .rBox .mjsy .leftBox {
@@ -375,3 +376,74 @@ body, html {
             width: 62%; }
           .container .rBox .mjsy .rightBox .ptgg ul li a:hover em, .container .rBox .mjsy .rightBox .mjbz ul li a:hover em {
             text-decoration: underline; }
+
+.mlfl {
+  width: 100%;
+  padding-top: 58px;
+  background: #fff;
+  height: 100%;
+  min-height: 500px; }
+  .mlfl h2 {
+    width: 95%;
+    margin: 5px auto;
+    font: 12px/34px "微软雅黑";
+    background: #e9f8ff;
+    border: 1px solid #a4c2dc;
+    text-indent: 10px; }
+    .mlfl h2 a {
+      color: #333;
+      font-weight: bold; }
+    .mlfl h2 a:hover {
+      text-decoration: underline; }
+  .mlfl table {
+    width: 95%;
+    margin: 5px auto; }
+    .mlfl table td {
+      border: 1px solid #e2e2e3;
+      text-align: center;
+      font: 12px/32px "微软雅黑";
+      color: #000000; }
+      .mlfl table td a {
+        color: #000000; }
+      .mlfl table td a:hover {
+        text-decoration: underline; }
+
+.myCollection {
+  width: 100%;
+  background: #fff; }
+  .myCollection h2 {
+    width: 97%;
+    margin: 0 auto;
+    font: 16px/66px "微软雅黑";
+    color: #000; }
+    .myCollection h2 a {
+      padding-left: 24px;
+      background: url(../images/goback.png) no-repeat left center;
+      margin-right: 10px; }
+  .myCollection table {
+    width: 97%;
+    margin: 0 auto; }
+    .myCollection table th {
+      font: 12px/38px "微软雅黑";
+      color: #000;
+      font-weight: bold;
+      background: #f1f1f1; }
+    .myCollection table td {
+      font: 12px/50px "微软雅黑"; }
+    .myCollection table .spxxTitle, .myCollection table .spxx {
+      width: 47%; }
+    .myCollection table .kfqq {
+      width: 7%; }
+    .myCollection table .mz, .myCollection table .sj {
+      width: 5%; }
+    .myCollection table .mjcn {
+      width: 18%; }
+    .myCollection table .spxx {
+      text-indent: 30px; }
+    .myCollection table tr {
+      border-top: 1px solid #eeefef;
+      border-bottom: 1px solid #eeefef; }
+      .myCollection table tr .spxxTitle {
+        text-indent: 30px; }
+    .myCollection table tr:hover {
+      background: #ecf6ff; }
