@@ -1,0 +1,209 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #ebecec;
+}
+//基本样式
+$color_blue:#0088ff;//主色调蓝色
+$color_red:#ff3030;//着重色红色
+$color_orange:#ff4e00;//着重色橘色
+$bg_blue:#edf6ff;//价格栏的背景色
+$line_gray:#e2e2e3;//横线的灰色
+$color_3:#333;//字的颜色333
+$color_6:#666;//字的颜色666
+$color_9:#999;//字的颜色999
+$btn_h:36px;//li按钮的高度，input的高度
+$font_input:12px;//input的输入字体大小
+$hover_blue:#0071d3;//按钮鼠标移上的深蓝
+$cannot_click:#d5d5d5;//按钮不能点击的灰色
+$hover_gray:#f4f4f4;//鼠标移上变深灰
+.topBar{
+    width: 100%;
+    background: #0088ff;
+    position: relative;
+    height: 43px;
+    h2{
+       font: 13px/43px "微软雅黑"; 
+       font-weight: bold;
+       color: #91ccff;
+       padding: 0 30px;
+    }
+    .content{
+        li{
+            a{
+                display: block;
+                font: 11px/43px "微软雅黑";
+                color: #ffffff;
+                padding: 0 18px;
+                position: relative;
+                span{
+                    margin-right: 4px;
+                }
+                em{
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 3px;
+                    background: #ff0000;
+                    position: absolute;
+                    top: 12px;
+                    right: 13px;
+                    display: block;
+                }
+            }
+            .on{
+                background: #007eed;
+                height: 43px;
+            }
+            a:hover{
+                background: #007eed;
+                height: 43px;
+            }
+        }
+    }
+    .count{
+        .countBox{
+            margin-right: 4px;
+            a{
+                padding:0 10px;
+                font: 12px/43px "微软雅黑";
+                display: block;
+                color: #fff;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            .on{
+                background: #007eed;
+                height: 43px;
+            }
+            a:hover{
+                background: #007eed;
+                height: 43px;
+            }
+        }
+        .myCount{
+            margin-right: 4px;
+            ul{
+                li{
+                    padding:0 10px;
+                    font: 12px/43px "微软雅黑";
+                    display: block;
+                    color: #fff;
+                    i{
+                        margin-right: 5px;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.header{
+    width: 100%;
+    height: 76px;
+    background: #ffffff;
+    position: relative;
+    h2{
+        width:240px;
+        position: relative;
+        height: 100%;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+        }
+    }
+    .search{
+        width: 168px;
+        height: 33px;
+        position: absolute;
+        left: 240px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: 1px solid #d9d9d9;
+        border-radius: 14px;
+        padding-left: 20px;
+        input{
+            width: 136px;
+            height: 12px;
+            margin-top: 10px;
+            font-family: "微软雅黑";
+            color: #c3c3c3;
+        }
+        a{
+            margin-top: 6px;
+            margin-left: 4px;
+            i{
+                font-size: 17px;
+                color: #000000;
+            }
+        }
+    }
+}
+// 买家中心样样式
+.container{
+    width: 100%;
+    background: #eeefef;
+    margin-top: 22px;
+    .lBox{
+        width: 10%;
+        margin:0 0.8% 0 3%;
+        background: #ffffff;
+        .customerCenter{
+            border-bottom: 2px solid #eeefef;
+            h2{
+                font: 15px/50px "微软雅黑";
+                color: #afafaf;
+                text-align: center;
+                border-bottom: 2px solid #eeefef;
+            }
+            ul{
+                padding-top: 8px;
+                li{
+                    font: 12px/28px "微软雅黑";
+                    color: #000000;
+                }
+                span{
+                    margin-left: 16%;
+                    margin-right: 6px;
+                }
+                em{
+                    margin-left: 6px;
+                }
+                .hot{
+                    color: $color_orange;
+                }
+            }
+            h3{
+                font-size: 0;
+                text-align: center;
+                padding-top: 10px 0;
+                span,em{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 58px;
+                    height: 34px;
+                    font: 12px/34px "微软雅黑";
+                    color: #ffffff;
+                    text-align: center;
+                    margin:10px 5px;
+                    cursor: pointer;
+                }
+                span{
+                    background: #0088ff;
+                    margin-left: 0;
+                }
+                em{
+                    background: #5185b3;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
