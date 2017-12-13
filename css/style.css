@@ -245,111 +245,120 @@ body, html {
       .container .lBox .setCusInfo .shdl dt {
         background: url(../images/dltc.png) no-repeat 24% center; }
   .container .rBox {
-    width: 83%;
-    background: #fff; }
+    width: 81%; }
     .container .rBox .mjsy {
       width: 100%; }
       .container .rBox .mjsy .leftBox {
-        width: 69%;
-        margin-left: 1.7%; }
-        .container .rBox .mjsy .leftBox .rmzq h2 {
-          font: 20px/20px "微软雅黑";
-          color: #000;
-          border-left: 4px solid #0088ff;
-          margin: 18px 0;
-          padding-left: 7px; }
-        .container .rBox .mjsy .leftBox .rmzq .rmCon a {
-          display: block;
-          font: 13px/37px "微软雅黑";
-          color: #000;
-          padding: 0 13px;
-          margin: 7px 15px;
-          border: 2px solid #ffb400;
-          border-radius: 2px; }
-        .container .rBox .mjsy .leftBox .rmzq .rmCon .yellow {
-          border: 2px solid #ffb400; }
-        .container .rBox .mjsy .leftBox .rmzq .rmCon .blue {
-          border: 2px solid #008aff; }
-        .container .rBox .mjsy .leftBox .rmzq .rmCon .green {
-          border: 2px solid #55c916; }
-        .container .rBox .mjsy .leftBox .rmzq .rmCon .orange {
-          border: 2px solid #ff5a00; }
-        .container .rBox .mjsy .leftBox .jxtj h2, .container .rBox .mjsy .leftBox .zxsp h2 {
-          font: 20px/20px "微软雅黑";
-          color: #000;
-          border-left: 4px solid #0088ff;
-          margin: 18px 0;
-          padding-left: 7px; }
-        .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li {
-          border-top: 1px solid #f1f1f1;
-          border-bottom: 1px solid #f1f1f1;
-          padding: 14px 0; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a strong, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a strong {
-            display: inline-block;
-            vertical-align: top;
-            font: 12px/21px "微软雅黑"; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a span {
-            width: 36px;
-            height: 21px;
-            background: #fa9c22;
-            border-radius: 10px;
-            font: 12px/21px "微软雅黑";
-            color: #fff;
+        width: 73%; }
+        .container .rBox .mjsy .leftBox .rmzq {
+          padding-left: 20px;
+          background: #fff;
+          padding-top: 18px; }
+          .container .rBox .mjsy .leftBox .rmzq h2 {
+            font: 20px/20px "微软雅黑";
+            color: #000;
+            border-left: 4px solid #0088ff;
+            margin: 0 0px 18px 0;
+            padding-left: 7px; }
+          .container .rBox .mjsy .leftBox .rmzq .rmCon a {
+            display: block;
+            font: 13px/37px "微软雅黑";
+            color: #000;
+            padding: 0 13px;
+            margin: 7px 15px;
+            border: 2px solid #ffb400;
+            border-radius: 2px; }
+          .container .rBox .mjsy .leftBox .rmzq .rmCon .yellow {
+            border: 2px solid #ffb400; }
+          .container .rBox .mjsy .leftBox .rmzq .rmCon .blue {
+            border: 2px solid #008aff; }
+          .container .rBox .mjsy .leftBox .rmzq .rmCon .green {
+            border: 2px solid #55c916; }
+          .container .rBox .mjsy .leftBox .rmzq .rmCon .orange {
+            border: 2px solid #ff5a00; }
+        .container .rBox .mjsy .leftBox .jxtj, .container .rBox .mjsy .leftBox .zxsp {
+          padding-left: 20px;
+          padding-top: 18px;
+          background: #fff; }
+          .container .rBox .mjsy .leftBox .jxtj h2, .container .rBox .mjsy .leftBox .zxsp h2 {
+            font: 20px/20px "微软雅黑";
+            color: #000;
+            border-left: 4px solid #0088ff;
+            padding-left: 7px;
+            margin: 0 0px 18px 0; }
+          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li {
+            border-top: 1px solid #f1f1f1;
+            border-bottom: 1px solid #f1f1f1;
+            padding: 14px 0; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a strong, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a strong {
+              display: inline-block;
+              vertical-align: top;
+              font: 12px/21px "微软雅黑"; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a span, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a span {
+              width: 36px;
+              height: 21px;
+              background: #fa9c22;
+              border-radius: 10px;
+              font: 12px/21px "微软雅黑";
+              color: #fff;
+              text-align: center;
+              margin: 0 13px; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a em {
+              width: 52%;
+              color: #000; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a i {
+              width: 21%;
+              text-align: center;
+              color: #8c8c8c; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a b {
+              width: 8%;
+              text-align: center;
+              color: #000; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a strong, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a strong {
+              width: 10%;
+              text-align: center;
+              font-weight: bold;
+              color: #fa9c22;
+              font-size: 14px; }
+          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li:hover, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li:hover {
+            background: #ecf6ff; }
+          .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation {
             text-align: center;
-            margin: 0 13px; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a em, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a em {
-            width: 52%;
-            color: #000; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a i, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a i {
-            width: 21%;
+            font-size: 0; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li {
+              display: inline-block;
+              vertical-align: top;
+              border: 1px solid #e2e2e3;
+              width: 32px;
+              margin: 20px 6px;
+              border-radius: 4px; }
+              .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li a, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li a {
+                font: 12px/32px "微软雅黑";
+                color: #000;
+                display: block; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation .on, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation .on {
+              border: 1px solid #0088ff; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li:hover, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li:hover {
+              border: 1px solid #0088ff; }
+          .container .rBox .mjsy .leftBox .jxtj .jxBox h3, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 {
             text-align: center;
-            color: #8c8c8c; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a b, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a b {
-            width: 8%;
-            text-align: center;
-            color: #000; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li a strong, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li a strong {
-            width: 10%;
-            text-align: center;
-            font-weight: bold;
-            color: #fa9c22;
-            font-size: 14px; }
-        .container .rBox .mjsy .leftBox .jxtj .jxBox .jssp li:hover, .container .rBox .mjsy .leftBox .zxsp .jxBox .jssp li:hover {
-          background: #ecf6ff; }
-        .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation {
-          text-align: center;
-          font-size: 0; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li {
-            display: inline-block;
-            vertical-align: top;
-            border: 1px solid #e2e2e3;
-            width: 32px;
-            margin: 20px 6px;
-            border-radius: 4px; }
-            .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li a, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li a {
-              font: 12px/32px "微软雅黑";
-              color: #000;
-              display: block; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation .on, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation .on {
-            border: 1px solid #0088ff; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox .pagenation li:hover, .container .rBox .mjsy .leftBox .zxsp .jxBox .pagenation li:hover {
-            border: 1px solid #0088ff; }
-        .container .rBox .mjsy .leftBox .jxtj .jxBox h3, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 {
-          text-align: center;
-          font-size: 0; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox h3 span, .container .rBox .mjsy .leftBox .jxtj .jxBox h3 em, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 span, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 em {
-            display: inline-block;
-            vertical-align: middle;
-            font: 12px/68px "微软雅黑";
-            color: #0088ff; }
-          .container .rBox .mjsy .leftBox .jxtj .jxBox h3 span, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 span {
-            margin: 0 5px; }
-        .container .rBox .mjsy .leftBox .zxsp {
-          border-top: 10px solid #eeefef; }
+            font-size: 0; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox h3 span, .container .rBox .mjsy .leftBox .jxtj .jxBox h3 em, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 span, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 em {
+              display: inline-block;
+              vertical-align: middle;
+              font: 12px/68px "微软雅黑";
+              color: #0088ff; }
+            .container .rBox .mjsy .leftBox .jxtj .jxBox h3 span, .container .rBox .mjsy .leftBox .zxsp .jxBox h3 span {
+              margin: 0 5px; }
+        .container .rBox .mjsy .leftBox .zxsp, .container .rBox .mjsy .leftBox .jxtj, .container .rBox .mjsy .leftBox .zxsp, .container .rBox .mjsy .leftBox .rmzq {
+          margin-bottom: 10px; }
       .container .rBox .mjsy .rightBox {
-        width: 28%; }
+        width: 25%;
+        background: #fff; }
         .container .rBox .mjsy .rightBox .ptgg, .container .rBox .mjsy .rightBox .mjbz {
-          margin-left: 16%; }
+          padding-left: 29px;
+          padding-bottom: 20px;
+          border-bottom: 10px solid #eeefef; }
           .container .rBox .mjsy .rightBox .ptgg h2, .container .rBox .mjsy .rightBox .mjbz h2 {
             font: 20px/20px "微软雅黑";
             color: #000;

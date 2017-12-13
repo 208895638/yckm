@@ -326,19 +326,21 @@ to {transform:rotate(-180deg);}
         }
     }
     .rBox{
-        width: 83%;
-        background: #fff;
+        width: 81%;
         .mjsy{
             width: 100%;
             .leftBox{
-                width: 69%;
-                margin-left: 1.7%;
+                width: 73%;
+//              margin-left: 1.7%;
                 .rmzq{
+                    padding-left: 20px;
+                    background: #fff;
+                    padding-top: 18px;
                     h2{
                         font: 20px/20px "微软雅黑";
                         color: #000;
                         border-left: 4px solid $color_blue;
-                        margin:18px 0;
+                        margin:0 0px 18px 0;
                         padding-left: 7px;
                     }
                     .rmCon{
@@ -366,12 +368,15 @@ to {transform:rotate(-180deg);}
                     }
                 }
                 .jxtj,.zxsp{
+                    padding-left: 20px;
+                    padding-top: 18px;
+                    background: #fff;
                     h2{
                         font: 20px/20px "微软雅黑";
                         color: #000;
                         border-left: 4px solid $color_blue;
-                        margin:18px 0;
                         padding-left: 7px;
+                        margin:0 0px 18px 0;
                     }
                     .jxBox{
                         .jssp{
@@ -460,14 +465,17 @@ to {transform:rotate(-180deg);}
                         }
                     }
                 }
-                .zxsp{
-                    border-top: 10px solid #eeefef;
+                .zxsp,.jxtj,.zxsp,.rmzq{
+                    margin-bottom: 10px;
                 }
             }
             .rightBox{
-                width: 28%;
+                width: 25%;
+                background: #fff;
                 .ptgg,.mjbz{
-                    margin-left:16% ;
+                    padding-left: 29px;
+                    padding-bottom: 20px;
+                    border-bottom: 10px solid #eeefef;
                     h2{
                         font: 20px/20px "微软雅黑";
                         color: #000;
