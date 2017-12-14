@@ -2,6 +2,7 @@ body,html{
     width: 100%;
     height: 100%;
     background: #ebecec;
+    min-width: 1200px;
 }
 //基本样式
 $color_blue:#0088ff;//主色调蓝色
@@ -555,6 +556,7 @@ to {transform:rotate(-180deg);}
 .myCollection{
     width: 100%;
     background: #fff;
+    padding-bottom: 100px;
     h2{
         width: 97%;
         margin:0 auto;
@@ -564,44 +566,187 @@ to {transform:rotate(-180deg);}
            padding-left: 24px;
            background: url(../images/goback.png) no-repeat left center; 
            margin-right: 10px;
+           color: $color_blue;
+        }
+        span{
+            font-weight: bold;
         }
     }
-    table{
+    .tableBox{
         width: 97%;
-        margin:0 auto;
-        th{
-            font:12px/38px "微软雅黑" ;
-            color: #000;
-            font-weight: bold;
-            background: #f1f1f1;
-        }
-        td{
-            font: 12px/50px "微软雅黑";
-        }
-        .spxxTitle,.spxx{
-            width: 47%;
-        }
-        .kfqq{
-            width: 7%;
-        }
-        .mz,.sj{
-            width: 5%;
-        }
-        .mjcn{
-            width: 18%;
-        }
-        .spxx{
-                text-indent: 30px;
+        overflow-x: auto;
+        table{
+            width: 1619px;
+            th{
+                font:12px/38px "微软雅黑" ;
+                color: #000;
+                font-weight: bold;
+                background: #f1f1f1;
             }
-        tr{
-            border-top: 1px solid #eeefef;
-            border-bottom: 1px solid #eeefef;
-            .spxxTitle{
-                text-indent: 30px;
+            td{
+                font: 12px/50px "微软雅黑";
+                text-align: center;
+                vertical-align: middle;
+                img{
+                    margin:0 auto;
+                    vertical-align: middle;
+                }
+                b{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                .orange{
+                    color: $sp_orange;
+                    font-weight: bold;
+                }
+                button{
+                    padding: 7px 10px;
+                    background: #4a9fff;
+                    color: #fff;
+                    border-radius: 2px;
+                }
+                .colorPink{
+                    color: #ff6666;
+                }
+            }
+            .spxxTitle,.spxx{
+                width: 716px;
+                 padding-left: 30px;
+            }
+            .kfqq{
+                width: 140px;
+            }
+            .mz,.sj{
+                width:126px;
+            }
+            .sc.gm{
+                width: 100px;
+            }
+            .mjcn{
+                width: 216px;
+            }
+            .spxx{
+               
+                text-align: left;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: #000;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: 0;
+                    span{
+                        padding:0 5px;
+                        background: #ff7200;
+                        margin-right: 12px;
+                        color: #fff;
+                        border-radius: 10px;
+                        height: 22px;
+                        font: 12px/22px "微软雅黑";
+                        text-align: center;
+                        
+                        margin-top: 14px;
+                    }
+                    span,em{
+                        font-size: 12px;
+                    }
+                    em{
+                        width: 630px;
+                        text-align: left;
+                    }
+                }
+            }
+            tr{
+                border-top: 1px solid #eeefef;
+                border-bottom: 1px solid #eeefef;
+            }
+            tr:hover{
+                background: #ecf6ff;
             }
         }
-        tr:hover{
-            background: #ecf6ff;
+    }
+    
+}
+.myOrder{
+    padding-top: 66px;
+    padding-left: 16px;
+    background: #fff;
+    .myOrderTop{
+        border-top: 1px solid #daedfa;
+        border-bottom: 1px solid #daedfa;
+        padding: 28px 0;
+        .daysOfBox{
+            input{
+                width: 294px;
+                margin-right: 20px;
+            }
+            button{
+                font: 12px/22px "微软雅黑";
+                border: 1px solid #9bc6e0;
+                padding: 0 10px;
+                margin:0 4px;
+                background: #fff;
+                border-radius: 2px;
+                margin-top: 5px;
+            }
+        }
+        .orderSearch{
+            margin-left: 20px;
+            label{
+                font: 12px/32px "微软雅黑";
+                color: #858585;
+            }
+            button{
+                font: 12px/30px "微软雅黑";
+                background: #1589ff;
+                color: #fff;
+                border-radius: 2px;
+            }
+            input{
+                font: 12px/30px "微软雅黑";
+                color: #cacaca;
+                border: 1px solid $line_gray;
+                border-radius: 2px;
+                margin-left: 10px;
+                padding-left: 10px;
+                margin-right: 8px;
+            }
+        }
+    }
+    .orderInfo{
+        .orderState{
+            padding:16px 0 0 0;
+            position: relative;
+            p{
+                position: absolute;
+                width: 100%;
+                height: 0;
+                border: 1px solid $line_gray;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            ul{
+                position: relative;
+                z-index: 2;
+            }
+            li{
+                font: 12px/30px "微软雅黑";
+                color: #000;
+                border: 1px solid $line_gray;
+                border-bottom: 2px solid transparent;
+                padding: 0 18px;
+                border-radius: 4px;
+                margin:0 2px;
+                a{
+                    color: #000;
+                }
+            }
+            .on{
+                border-bottom: 2px solid #fff;
+            }
         }
     }
 }

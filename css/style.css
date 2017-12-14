@@ -2,7 +2,8 @@
 body, html {
   width: 100%;
   height: 100%;
-  background: #ebecec; }
+  background: #ebecec;
+  min-width: 1200px; }
 
 .topBar {
   width: 100%;
@@ -410,7 +411,8 @@ body, html {
 
 .myCollection {
   width: 100%;
-  background: #fff; }
+  background: #fff;
+  padding-bottom: 100px; }
   .myCollection h2 {
     width: 97%;
     margin: 0 auto;
@@ -419,31 +421,143 @@ body, html {
     .myCollection h2 a {
       padding-left: 24px;
       background: url(../images/goback.png) no-repeat left center;
-      margin-right: 10px; }
-  .myCollection table {
+      margin-right: 10px;
+      color: #0088ff; }
+    .myCollection h2 span {
+      font-weight: bold; }
+  .myCollection .tableBox {
     width: 97%;
-    margin: 0 auto; }
-    .myCollection table th {
-      font: 12px/38px "微软雅黑";
+    overflow-x: auto; }
+    .myCollection .tableBox table {
+      width: 1619px; }
+      .myCollection .tableBox table th {
+        font: 12px/38px "微软雅黑";
+        color: #000;
+        font-weight: bold;
+        background: #f1f1f1; }
+      .myCollection .tableBox table td {
+        font: 12px/50px "微软雅黑";
+        text-align: center;
+        vertical-align: middle; }
+        .myCollection .tableBox table td img {
+          margin: 0 auto;
+          vertical-align: middle; }
+        .myCollection .tableBox table td b {
+          display: block;
+          width: 100%;
+          height: 100%; }
+        .myCollection .tableBox table td .orange {
+          color: #fa9c22;
+          font-weight: bold; }
+        .myCollection .tableBox table td button {
+          padding: 7px 10px;
+          background: #4a9fff;
+          color: #fff;
+          border-radius: 2px; }
+        .myCollection .tableBox table td .colorPink {
+          color: #ff6666; }
+      .myCollection .tableBox table .spxxTitle, .myCollection .tableBox table .spxx {
+        width: 716px;
+        padding-left: 30px; }
+      .myCollection .tableBox table .kfqq {
+        width: 140px; }
+      .myCollection .tableBox table .mz, .myCollection .tableBox table .sj {
+        width: 126px; }
+      .myCollection .tableBox table .sc.gm {
+        width: 100px; }
+      .myCollection .tableBox table .mjcn {
+        width: 216px; }
+      .myCollection .tableBox table .spxx {
+        text-align: left; }
+        .myCollection .tableBox table .spxx a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #000;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 0; }
+          .myCollection .tableBox table .spxx a span {
+            padding: 0 5px;
+            background: #ff7200;
+            margin-right: 12px;
+            color: #fff;
+            border-radius: 10px;
+            height: 22px;
+            font: 12px/22px "微软雅黑";
+            text-align: center;
+            margin-top: 14px; }
+          .myCollection .tableBox table .spxx a span, .myCollection .tableBox table .spxx a em {
+            font-size: 12px; }
+          .myCollection .tableBox table .spxx a em {
+            width: 630px;
+            text-align: left; }
+      .myCollection .tableBox table tr {
+        border-top: 1px solid #eeefef;
+        border-bottom: 1px solid #eeefef; }
+      .myCollection .tableBox table tr:hover {
+        background: #ecf6ff; }
+
+.myOrder {
+  padding-top: 66px;
+  padding-left: 16px;
+  background: #fff; }
+  .myOrder .myOrderTop {
+    border-top: 1px solid #daedfa;
+    border-bottom: 1px solid #daedfa;
+    padding: 28px 0; }
+    .myOrder .myOrderTop .daysOfBox input {
+      width: 294px;
+      margin-right: 20px; }
+    .myOrder .myOrderTop .daysOfBox button {
+      font: 12px/22px "微软雅黑";
+      border: 1px solid #9bc6e0;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: #fff;
+      border-radius: 2px;
+      margin-top: 5px; }
+    .myOrder .myOrderTop .orderSearch {
+      margin-left: 20px; }
+      .myOrder .myOrderTop .orderSearch label {
+        font: 12px/32px "微软雅黑";
+        color: #858585; }
+      .myOrder .myOrderTop .orderSearch button {
+        font: 12px/30px "微软雅黑";
+        background: #1589ff;
+        color: #fff;
+        border-radius: 2px; }
+      .myOrder .myOrderTop .orderSearch input {
+        font: 12px/30px "微软雅黑";
+        color: #cacaca;
+        border: 1px solid #e2e2e3;
+        border-radius: 2px;
+        margin-left: 10px;
+        padding-left: 10px;
+        margin-right: 8px; }
+  .myOrder .orderInfo .orderState {
+    padding: 16px 0 0 0;
+    position: relative; }
+    .myOrder .orderInfo .orderState p {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      border: 1px solid #e2e2e3;
+      left: 0;
+      bottom: 0;
+      z-index: 1; }
+    .myOrder .orderInfo .orderState ul {
+      position: relative;
+      z-index: 2; }
+    .myOrder .orderInfo .orderState li {
+      font: 12px/30px "微软雅黑";
       color: #000;
-      font-weight: bold;
-      background: #f1f1f1; }
-    .myCollection table td {
-      font: 12px/50px "微软雅黑"; }
-    .myCollection table .spxxTitle, .myCollection table .spxx {
-      width: 47%; }
-    .myCollection table .kfqq {
-      width: 7%; }
-    .myCollection table .mz, .myCollection table .sj {
-      width: 5%; }
-    .myCollection table .mjcn {
-      width: 18%; }
-    .myCollection table .spxx {
-      text-indent: 30px; }
-    .myCollection table tr {
-      border-top: 1px solid #eeefef;
-      border-bottom: 1px solid #eeefef; }
-      .myCollection table tr .spxxTitle {
-        text-indent: 30px; }
-    .myCollection table tr:hover {
-      background: #ecf6ff; }
+      border: 1px solid #e2e2e3;
+      border-bottom: 2px solid transparent;
+      padding: 0 18px;
+      border-radius: 4px;
+      margin: 0 2px; }
+      .myOrder .orderInfo .orderState li a {
+        color: #000; }
+    .myOrder .orderInfo .orderState .on {
+      border-bottom: 2px solid #fff; }
