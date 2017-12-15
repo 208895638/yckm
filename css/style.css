@@ -501,6 +501,7 @@ body, html {
 .myOrder {
   padding-top: 66px;
   padding-left: 16px;
+  padding-bottom: 18px;
   background: #fff; }
   .myOrder .myOrderTop {
     border-top: 1px solid #daedfa;
@@ -561,3 +562,318 @@ body, html {
         color: #000; }
     .myOrder .orderInfo .orderState .on {
       border-bottom: 2px solid #fff; }
+  .myOrder .orderInfo .orderBox {
+    overflow-x: auto; }
+    .myOrder .orderInfo .orderBox ul {
+      width: 1625px; }
+    .myOrder .orderInfo .orderBox .ddxx {
+      width: 608px; }
+    .myOrder .orderInfo .orderBox .czzh {
+      width: 180px; }
+    .myOrder .orderInfo .orderBox .gmsl {
+      width: 140px; }
+    .myOrder .orderInfo .orderBox .ddzj {
+      width: 140px; }
+    .myOrder .orderInfo .orderBox .ddzt {
+      width: 214px; }
+    .myOrder .orderInfo .orderBox .cz {
+      width: 248px; }
+    .myOrder .orderInfo .orderBox .ddxq {
+      width: 92px; }
+    .myOrder .orderInfo .orderBox .orderBoxTitle {
+      background: #f1f1f1;
+      margin-top: 20px;
+      margin-bottom: 8px; }
+      .myOrder .orderInfo .orderBox .orderBoxTitle li {
+        font: 12px/36px "微软雅黑";
+        font-weight: bold;
+        color: #000;
+        text-align: center; }
+        .myOrder .orderInfo .orderBox .orderBoxTitle li a {
+          color: #000; }
+      .myOrder .orderInfo .orderBox .orderBoxTitle .ddxx {
+        text-indent: 16px;
+        text-align: left; }
+    .myOrder .orderInfo .orderBox .orderBoxBottom li {
+      border: 1px solid #e2e2e3;
+      text-align: center;
+      margin: 16px 0; }
+      .myOrder .orderInfo .orderBox .orderBoxBottom li h2 {
+        font: 12px/32px "微软雅黑";
+        color: #858585;
+        text-indent: 16px;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e3; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li h2 span {
+          margin-right: 14px; }
+      .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span {
+        font: 12px/56px "微软雅黑";
+        color: #000; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span em {
+          padding-left: 20px;
+          background: url(../images/sj.png) no-repeat left center;
+          color: #ff910f; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span i {
+          padding: 8px;
+          background: #ff4e4e;
+          color: #fff;
+          cursor: pointer; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span b {
+          color: #000;
+          cursor: pointer;
+          padding: 8px;
+          border: 1px solid #e2e2e3;
+          border-radius: 4px; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span a {
+          color: #02c418; }
+      .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo .ddxx {
+        text-align: left;
+        text-indent: 16px;
+        color: #0088ff; }
+      .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo .ddxq {
+        color: #0088ff;
+        cursor: pointer; }
+    .myOrder .orderInfo .orderBox .orderBoxBottom li:hover {
+      background: #f1f1f1; }
+    .myOrder .orderInfo .orderBox .resultNone {
+      padding-top: 70px; }
+      .myOrder .orderInfo .orderBox .resultNone p {
+        text-align: center;
+        font: 12px/42px "微软雅黑";
+        color: #878787; }
+        .myOrder .orderInfo .orderBox .resultNone p img {
+          margin: 0 auto; }
+  .myOrder .orderInfo .pagenation .pageBox .page {
+    margin-right: 30px; }
+    .myOrder .orderInfo .pagenation .pageBox .page li {
+      font: 12px/54px "微软雅黑"; }
+      .myOrder .orderInfo .pagenation .pageBox .page li a {
+        color: #666; }
+        .myOrder .orderInfo .pagenation .pageBox .page li a span, .myOrder .orderInfo .pagenation .pageBox .page li a em, .myOrder .orderInfo .pagenation .pageBox .page li a i {
+          padding: 12px;
+          border: 1px solid #e2e2e3;
+          margin: 0 2px; }
+      .myOrder .orderInfo .pagenation .pageBox .page li .on {
+        color: #fff; }
+        .myOrder .orderInfo .pagenation .pageBox .page li .on span, .myOrder .orderInfo .pagenation .pageBox .page li .on em, .myOrder .orderInfo .pagenation .pageBox .page li .on i {
+          border: 1px solid #ff4401;
+          background: #ff4401; }
+  .myOrder .orderInfo .pagenation .pageBox .jumping {
+    font: 12px/54px "微软雅黑";
+    color: #000; }
+    .myOrder .orderInfo .pagenation .pageBox .jumping input {
+      width: 38px;
+      height: 32px;
+      padding-left: 12px;
+      border: 1px solid #e2e2e3;
+      margin: 0 9px; }
+    .myOrder .orderInfo .pagenation .pageBox .jumping a {
+      padding: 9px 12px;
+      color: #666;
+      border: 1px solid #e2e2e3;
+      margin: 0 8px; }
+
+.afterSale {
+  padding-top: 66px;
+  padding-left: 16px;
+  padding-bottom: 18px;
+  background: #fff; }
+  .afterSale .SaleTop {
+    border-top: 1px solid #daedfa;
+    border-bottom: 1px solid #daedfa;
+    padding: 28px 0; }
+    .afterSale .SaleTop .daysOfBox input {
+      width: 294px;
+      margin-right: 20px; }
+    .afterSale .SaleTop .daysOfBox button {
+      font: 12px/22px "微软雅黑";
+      border: 1px solid #9bc6e0;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: #fff;
+      border-radius: 2px;
+      margin-top: 5px; }
+    .afterSale .SaleTop .orderSearch {
+      margin-left: 20px; }
+      .afterSale .SaleTop .orderSearch label {
+        font: 12px/32px "微软雅黑";
+        color: #858585; }
+      .afterSale .SaleTop .orderSearch button {
+        font: 12px/30px "微软雅黑";
+        background: #1589ff;
+        color: #fff;
+        border-radius: 2px; }
+      .afterSale .SaleTop .orderSearch input {
+        font: 12px/30px "微软雅黑";
+        color: #cacaca;
+        border: 1px solid #e2e2e3;
+        border-radius: 2px;
+        margin-left: 10px;
+        padding-left: 10px;
+        margin-right: 8px; }
+  .afterSale .saleInfo .saleState {
+    padding: 16px 0 0 0;
+    position: relative; }
+    .afterSale .saleInfo .saleState p {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      border: 1px solid #e2e2e3;
+      left: 0;
+      bottom: 0;
+      z-index: 1; }
+    .afterSale .saleInfo .saleState ul {
+      position: relative;
+      z-index: 2; }
+    .afterSale .saleInfo .saleState li {
+      font: 12px/30px "微软雅黑";
+      color: #000;
+      border: 1px solid #e2e2e3;
+      border-bottom: 2px solid transparent;
+      padding: 0 18px;
+      border-radius: 4px;
+      margin: 0 2px; }
+      .afterSale .saleInfo .saleState li a {
+        color: #000; }
+    .afterSale .saleInfo .saleState .on {
+      border-bottom: 2px solid #fff; }
+  .afterSale .saleInfo .saleBox {
+    overflow-x: auto; }
+    .afterSale .saleInfo .saleBox ul {
+      width: 1625px; }
+    .afterSale .saleInfo .saleBox .xgdd {
+      width: 608px; }
+    .afterSale .saleInfo .saleBox .shzt {
+      width: 220px; }
+    .afterSale .saleInfo .saleBox .zt {
+      width: 330px; }
+    .afterSale .saleInfo .saleBox .cz {
+      width: 140px; }
+    .afterSale .saleInfo .saleBox .xq {
+      width: 214px; }
+    .afterSale .saleInfo .saleBox .saleBoxTitle {
+      background: #f1f1f1;
+      margin-top: 20px;
+      margin-bottom: 8px; }
+      .afterSale .saleInfo .saleBox .saleBoxTitle li {
+        font: 12px/36px "微软雅黑";
+        font-weight: bold;
+        color: #000;
+        text-align: center; }
+        .afterSale .saleInfo .saleBox .saleBoxTitle li a {
+          color: #000; }
+      .afterSale .saleInfo .saleBox .saleBoxTitle .ddxx {
+        text-indent: 16px;
+        text-align: left; }
+    .afterSale .saleInfo .saleBox .saleBoxBottom li {
+      border: 1px solid #e2e2e3;
+      text-align: center;
+      margin: 16px 0; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li h2 {
+        font: 12px/32px "微软雅黑";
+        color: #858585;
+        text-indent: 16px;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e3; }
+        .afterSale .saleInfo .saleBox .saleBoxBottom li h2 span {
+          margin-right: 14px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .xgdd {
+        text-align: left;
+        text-indent: 16px;
+        color: #077cff; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ts, .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx {
+        padding: 7px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx {
+        background: #4e99ff;
+        color: #fff;
+        margin: 0 4px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ts {
+        border: 1px solid #e2e2e3;
+        color: #000; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span {
+        font: 12px/56px "微软雅黑";
+        color: #000; }
+        .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span em {
+          color: #ff8a00; }
+        .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span i {
+          color: #000; }
+        .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span b {
+          color: #000;
+          cursor: pointer;
+          padding: 8px;
+          border: 1px solid #e2e2e3;
+          border-radius: 4px; }
+        .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span a {
+          color: #02c418; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ddxx {
+        text-align: left;
+        text-indent: 16px;
+        color: #0088ff; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ddxq {
+        color: #0088ff;
+        cursor: pointer; }
+    .afterSale .saleInfo .saleBox .saleBoxBottom li:hover {
+      background: #f1f1f1; }
+    .afterSale .saleInfo .saleBox .resultNone {
+      padding-top: 70px; }
+      .afterSale .saleInfo .saleBox .resultNone p {
+        text-align: center;
+        font: 12px/42px "微软雅黑";
+        color: #878787; }
+        .afterSale .saleInfo .saleBox .resultNone p img {
+          margin: 0 auto; }
+  .afterSale .saleInfo .pagenation .pageBox .page {
+    margin-right: 30px; }
+    .afterSale .saleInfo .pagenation .pageBox .page li {
+      font: 12px/54px "微软雅黑"; }
+      .afterSale .saleInfo .pagenation .pageBox .page li a {
+        color: #666; }
+        .afterSale .saleInfo .pagenation .pageBox .page li a span, .afterSale .saleInfo .pagenation .pageBox .page li a em, .afterSale .saleInfo .pagenation .pageBox .page li a i {
+          padding: 12px;
+          border: 1px solid #e2e2e3;
+          margin: 0 2px; }
+      .afterSale .saleInfo .pagenation .pageBox .page li .on {
+        color: #fff; }
+        .afterSale .saleInfo .pagenation .pageBox .page li .on span, .afterSale .saleInfo .pagenation .pageBox .page li .on em, .afterSale .saleInfo .pagenation .pageBox .page li .on i {
+          border: 1px solid #ff4401;
+          background: #ff4401; }
+  .afterSale .saleInfo .pagenation .pageBox .jumping {
+    font: 12px/54px "微软雅黑";
+    color: #000; }
+    .afterSale .saleInfo .pagenation .pageBox .jumping input {
+      width: 38px;
+      height: 32px;
+      padding-left: 12px;
+      border: 1px solid #e2e2e3;
+      margin: 0 9px; }
+    .afterSale .saleInfo .pagenation .pageBox .jumping a {
+      padding: 9px 12px;
+      color: #666;
+      border: 1px solid #e2e2e3;
+      margin: 0 8px; }
+  .afterSale .saleInfo .illustrate dt, .afterSale .saleInfo .illustrate dd {
+    font: 12px/24px "微软雅黑";
+    color: #838383;
+    text-indent: 16px; }
+  .afterSale .saleInfo .illustrate dt {
+    font-weight: bold;
+    color: #323232; }
+
+.recharge {
+  background: #fff;
+  padding-top: 94px; }
+  .recharge .rechargeMain h2 {
+    text-align: center;
+    font: 16px/55px "微软雅黑";
+    color: #4d4d4d; }
+  .recharge .rechargeMain ul li {
+    width: 255px;
+    height: 56px;
+    margin: 8px auto;
+    border: 1px solid #e2e2e3;
+    border-radius: 1px;
+    font: 12px/56px "微软雅黑";
+    color: #4d4d4d;
+    text-align: center; }
+    .recharge .rechargeMain ul li input {
+      margin-left: 22px; }

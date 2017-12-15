@@ -669,9 +669,11 @@ to {transform:rotate(-180deg);}
     }
     
 }
+//我的订单
 .myOrder{
     padding-top: 66px;
     padding-left: 16px;
+    padding-bottom: 18px;
     background: #fff;
     .myOrderTop{
         border-top: 1px solid #daedfa;
@@ -746,6 +748,442 @@ to {transform:rotate(-180deg);}
             }
             .on{
                 border-bottom: 2px solid #fff;
+            }
+        }
+        .orderBox{
+            overflow-x: auto;
+            ul{
+                width: 1625px;
+            }
+            .ddxx{
+                width: 608px;
+            }
+            .czzh{
+                width: 180px;
+            }
+            .gmsl{
+                width: 140px;
+            }
+            .ddzj{
+                width: 140px;
+            }
+            .ddzt{
+                width: 214px;
+            }
+            .cz{
+                width: 248px;
+            }
+            .ddxq{
+                width: 92px;
+            }
+            .orderBoxTitle{
+                background: #f1f1f1;
+                margin-top: 20px;
+                margin-bottom: 8px;
+                li{
+                    font: 12px/36px "微软雅黑";
+                    font-weight: bold;
+                    color: #000;
+                    text-align: center;
+                    a{
+                        color: #000;
+                    }
+                }
+                .ddxx{
+                    text-indent: 16px;
+                    text-align: left;
+                }
+            }
+            .orderBoxBottom{
+                li{
+                    border:1px solid $line_gray;
+                    text-align: center;
+                    margin:16px 0;
+                    h2{
+                        font: 12px/32px "微软雅黑";
+                        color: #858585;
+                        text-indent: 16px;
+                        text-align: left;
+                        border-bottom: 1px solid $line_gray;
+                        span{
+                            margin-right: 14px;
+                        }
+                    }
+                    .orderInfo{
+                        span{
+                            font: 12px/56px "微软雅黑";
+                            color: #000;
+                            em{
+                                padding-left: 20px;
+                                background: url(../images/sj.png) no-repeat left center;
+                                color: #ff910f;
+                            }
+                            i{
+                                padding: 8px;
+                                background: #ff4e4e;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                            b{
+                                color: #000;
+                                cursor: pointer;
+                                padding: 8px;
+                                border: 1px solid $line_gray;
+                                border-radius: 4px;
+                            }
+                            a{
+                                color: #02c418;
+                            }
+                        }
+                        .ddxx {
+                            text-align: left;
+                            text-indent: 16px;
+                            color: #0088ff;
+                        }
+                        .ddxq{
+                            color: #0088ff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                li:hover{
+                    background: #f1f1f1;
+                }
+            }
+            .resultNone{
+                padding-top: 70px;
+                p{
+                    text-align: center;
+                    font: 12px/42px "微软雅黑";
+                    color: #878787;
+                    img{
+                        margin:0 auto;
+                    }
+                }
+            }
+        }
+        .pagenation{
+            .pageBox{
+                .page{
+                    margin-right: 30px;
+                    li{
+                        font: 12px/54px "微软雅黑";
+                        a{
+                            color: $color_6;
+                            span,em,i{
+                                padding: 12px;
+                                border:1px solid $line_gray;
+                                margin:0 2px;
+                            }
+                        }
+                        .on{
+                            color: #fff;
+                            span,em,i{
+                               border:1px solid #ff4401; 
+                               background: #ff4401;
+                            }
+                        }
+                    }
+                }
+                .jumping{
+                    font: 12px/54px "微软雅黑";
+                    color: #000;
+                    input{
+                        width: 38px;
+                        height: 32px;
+                        padding-left: 12px;
+                        border: 1px solid $line_gray;
+                        margin:0 9px;
+                    }
+                    a{
+                        padding: 9px 12px;
+                        color: $color_6;
+                        border: 1px solid $line_gray;
+                        margin:0 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+//订单售后
+.afterSale{
+    padding-top: 66px;
+    padding-left: 16px;
+    padding-bottom: 18px;
+    background: #fff;
+    .SaleTop{
+        border-top: 1px solid #daedfa;
+        border-bottom: 1px solid #daedfa;
+        padding: 28px 0;
+        .daysOfBox{
+            input{
+                width: 294px;
+                margin-right: 20px;
+            }
+            button{
+                font: 12px/22px "微软雅黑";
+                border: 1px solid #9bc6e0;
+                padding: 0 10px;
+                margin:0 4px;
+                background: #fff;
+                border-radius: 2px;
+                margin-top: 5px;
+            }
+        }
+        .orderSearch{
+            margin-left: 20px;
+            label{
+                font: 12px/32px "微软雅黑";
+                color: #858585;
+            }
+            button{
+                font: 12px/30px "微软雅黑";
+                background: #1589ff;
+                color: #fff;
+                border-radius: 2px;
+            }
+            input{
+                font: 12px/30px "微软雅黑";
+                color: #cacaca;
+                border: 1px solid $line_gray;
+                border-radius: 2px;
+                margin-left: 10px;
+                padding-left: 10px;
+                margin-right: 8px;
+            }
+        }
+    }
+    .saleInfo{
+        .saleState{
+            padding:16px 0 0 0;
+            position: relative;
+            p{
+                position: absolute;
+                width: 100%;
+                height: 0;
+                border: 1px solid $line_gray;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            ul{
+                position: relative;
+                z-index: 2;
+            }
+            li{
+                font: 12px/30px "微软雅黑";
+                color: #000;
+                border: 1px solid $line_gray;
+                border-bottom: 2px solid transparent;
+                padding: 0 18px;
+                border-radius: 4px;
+                margin:0 2px;
+                a{
+                    color: #000;
+                }
+            }
+            .on{
+                border-bottom: 2px solid #fff;
+            }
+        }
+        .saleBox{
+            overflow-x: auto;
+            ul{
+                width: 1625px;
+            }
+            .xgdd{
+                width: 608px;
+            }
+            .shzt{
+                width: 220px;
+            }
+            .zt{
+                width: 330px;
+            }
+            .cz{
+                width: 140px;
+            }
+            .xq{
+                width: 214px;
+            }
+            .saleBoxTitle{
+                background: #f1f1f1;
+                margin-top: 20px;
+                margin-bottom: 8px;
+                li{
+                    font: 12px/36px "微软雅黑";
+                    font-weight: bold;
+                    color: #000;
+                    text-align: center;
+                    a{
+                        color: #000;
+                    }
+                }
+                .ddxx{
+                    text-indent: 16px;
+                    text-align: left;
+                }
+            }
+            .saleBoxBottom{
+                li{
+                    border:1px solid $line_gray;
+                    text-align: center;
+                    margin:16px 0;
+                    h2{
+                        font: 12px/32px "微软雅黑";
+                        color: #858585;
+                        text-indent: 16px;
+                        text-align: left;
+                        border-bottom: 1px solid $line_gray;
+                        span{
+                            margin-right: 14px;
+                        }
+                    }
+                    .saleInfos{
+                        .xgdd {
+                            text-align: left;
+                            text-indent: 16px;
+                            color: #077cff;
+                        }
+                        .ts,.cx{
+                            padding: 7px;
+                        }
+                        .cx{
+                            background: #4e99ff;
+                            color: #fff;
+                            margin:0 4px;
+                        }
+                        .ts{
+                           border: 1px solid $line_gray;
+                           color: #000;
+                        }
+                        span{
+                            font: 12px/56px "微软雅黑";
+                            color: #000;
+                            em{
+                                color: #ff8a00;
+                            }
+                            i{
+                               color: #000;
+                            }
+                            b{
+                                color: #000;
+                                cursor: pointer;
+                                padding: 8px;
+                                border: 1px solid $line_gray;
+                                border-radius: 4px;
+                            }
+                            a{
+                                color: #02c418;
+                            }
+                        }
+                        .ddxx {
+                            text-align: left;
+                            text-indent: 16px;
+                            color: #0088ff;
+                        }
+                        .ddxq{
+                            color: #0088ff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                li:hover{
+                    background: #f1f1f1;
+                }
+            }
+            .resultNone{
+                padding-top: 70px;
+                p{
+                    text-align: center;
+                    font: 12px/42px "微软雅黑";
+                    color: #878787;
+                    img{
+                        margin:0 auto;
+                    }
+                }
+            }
+        }
+        .pagenation{
+            .pageBox{
+                .page{
+                    margin-right: 30px;
+                    li{
+                        font: 12px/54px "微软雅黑";
+                        a{
+                            color: $color_6;
+                            span,em,i{
+                                padding: 12px;
+                                border:1px solid $line_gray;
+                                margin:0 2px;
+                            }
+                        }
+                        .on{
+                            color: #fff;
+                            span,em,i{
+                               border:1px solid #ff4401; 
+                               background: #ff4401;
+                            }
+                        }
+                    }
+                }
+                .jumping{
+                    font: 12px/54px "微软雅黑";
+                    color: #000;
+                    input{
+                        width: 38px;
+                        height: 32px;
+                        padding-left: 12px;
+                        border: 1px solid $line_gray;
+                        margin:0 9px;
+                    }
+                    a{
+                        padding: 9px 12px;
+                        color: $color_6;
+                        border: 1px solid $line_gray;
+                        margin:0 8px;
+                    }
+                }
+            }
+        }
+        .illustrate{
+            dt,dd{
+                font: 12px/24px "微软雅黑";
+                color: #838383;
+                text-indent: 16px;
+            }
+            dt{
+                font-weight: bold;
+                color: #323232;
+                
+            }
+        }
+    }
+}
+//账户充值
+.recharge{
+    background: #fff;
+    padding-top: 94px;
+    .rechargeMain{
+        h2{
+            text-align: center;
+            font: 16px/55px "微软雅黑";
+            color: #4d4d4d;
+        }
+        ul{
+            li{
+                width: 255px;
+                height: 56px;
+                margin:8px auto;
+                border: 1px solid $line_gray;
+                border-radius: 1px;
+                font: 12px/56px "微软雅黑";
+                color: #4d4d4d;
+                text-align: center;
+                input{
+                    margin-left: 22px;
+                }
             }
         }
     }
