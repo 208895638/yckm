@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
-    <title>允昌卡盟-我的订单</title>
+    <title>允昌卡盟-充值记录</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -49,7 +49,7 @@
     	</div>
     </div>
     <!--允昌卡盟顶部-->
-    <div class="header clearfix">
+   <div class="header clearfix">
     	<h2 class="l">
     		<img src="images/logo.png" alt="" />
     	</h2>
@@ -92,13 +92,13 @@
     			</dl>
     			<dl class="shdd">
     				<dt>订单管理</dt>
-    				<dd class="on"><a href="myOrder.html">订单明细</a></dd>
+    				<dd><a href="myOrder.html">订单明细</a></dd>
     				<dd><a href="afterSale.html">订单售后</a></dd>
     			</dl>
     			<dl class="shzh">
     				<dt>账户资金</dt>
     				<dd><a href="recharge.html">账户充值</a></dd>
-    				<dd><a href="record.html">充值记录</a></dd>
+    				<dd class="on"><a href="record.html">充值记录</a></dd>
     				<dd><a href="jvascript:;">账户提现</a></dd>
     				<dd><a href="jvascript:;">提现记录</a></dd>
     				<dd><a href="jvascript:;">资金明细</a></dd>
@@ -123,117 +123,63 @@
 	    			</ul>
     			</div>
     		</div>
-    		<!--我的订单-->
-    		<div class="myOrder">
-    			<div class="myOrderTop clearfix">
-    				<div class="daysOfBox l">
+    		<!--充值记录-->
+    		<div class="record">
+    			<h2>充值金额 :<span>1211</span>原路退款 :<em>1111</em></h2>
+    			<div class="recordInfo">
+    				<div class="daysOfBox clearfix">
     					<input type="" name="" id="" value="" class="l"/>
-	    				<button class="now l borderNone">今天</button>
 	    				<button class="yesterday l borderNone">昨天</button>
-	    				<button class="daysOfThirty l borderNone">近30天</button>
-	    				<button class="daysOfNinety l borderNone">近90天</button>
-	    				<button class="section l borderNone">30天~90天</button>	
+	    				<button class="now l borderNone">今天</button>
+	    				<button class="daysOfWeek l borderNone">本周</button>
+	    				<button class="daysOfMonth l borderNone">本月</button>
+	    				<button class="thisWeek l borderNone">近本周</button>
+	    				<button class="daysOfThirty l borderNone">近一月</button>
+	    				<button class="daysOfNinety l borderNone">近三月</button>
     				</div>
-    				<div class="orderSearch l clearfix">
-    					<label for="search" class="l">已购商品查询</label>
-    					<input type="text" name="" id="search"placeholder="请输入商品名称" class="l borderNone"/>
-    					<button class="borderNone l">查询</button>
+    				<div class="recordInfos">
+    					<table border="" cellspacing="" cellpadding="">
+    						<tr>
+    							<th>充值时间</th>
+    							<th>商家支付单号</th>
+    							<th>支付渠道</th>
+    							<th>充值金额</th>
+    							<th>
+    								<select name="">
+	    								<option value="">
+	    									等待支付
+	    								</option>
+	    								<option value="">
+	    									等待关闭
+	    								</option>
+	    								<option value="">
+	    									支付完成
+	    								</option>
+	    							</select>
+    							</th>
+    							<th>退款信息</th>
+    							<th>操作</th>
+    						</tr>
+    						<tr>
+    							<td class="czsj">2017-11-30 18:48:35</td>
+    							<td class="zfdh">17113068331154400265</td>
+    							<td class="zfqd">支付宝</td>
+    							<td class="czje">1.00</td>
+    							<td class="zfzt">等待支付</td>
+    							<td class="tkxx"><span>已退款</span><em>10.00</em><i>（2017-06-07 12:12:12）</i></td>
+    							<td class="cz"><a href="javascript:;">自助补单</a></td>
+    						</tr>
+    					</table>
     				</div>
     			</div>
-    			<div class="orderInfo">
-    				<div class="orderState">
-    					<ul class="clearfix ">
-		    				<li class="l on"><a href="javascript:;">全部</a></li>
-		    				<li class="l"><a href="javascript:;">等待处理</a></li>
-		    				<li class="l"><a href="javascript:;">处理中</a></li>
-		    				<li class="l"><a href="javascript:;">交易完成<span></span></a></li>
-		    				<li class="l"><a href="javascript:;">交易取消<span></span></a></li>
-		    			</ul>
-		    			<p></p>
-    				</div>
-	    			
-	    			<div class="orderBox">
-	    				<ul class="orderBoxTitle clearfix">
-	    					<li class="l ddxx"><a href="javascript:;">订单信息</a></li>
-	    					<li class="l czzh"><a href="javascript:;">充值帐号</a></li>
-	    					<li class="l gmsl"><a href="javascript:;">数量</a></li>
-	    					<li class="l ddzj"><a href="javascript:;">购价</a></li>
-	    					<li class="l sj"><a href="javascript:;">售价</a></li>
-	    					<li class="l jxlr"><a href="javascript:;">经销利润</a></li>
-	    					<li class="l ddzt"><a href="javascript:;">状态</a></li>
-	    					<li class="l cz"><a href="javascript:;">操做</a></li>
-	    					<li class="l ddxq"><a href="javascript:;">详情</a></li>
-	    				</ul>
-	    				<ul class="orderBoxBottom">
-	    					<li>
-	    						<h2>订单号：<span>10000000000000</span> 下单时间：<em>2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/wc.png"/></em>等待处理<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><em>12小时后未处理可退单</em></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    					<li>
-	    						<h2><span>订单号：10000000000000</span> <em>下单时间：2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/sj.png"/></em>等待接单<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><i>退单</i></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    					<li>
-	    						<h2><span>订单号：10000000000000</span> <em>下单时间：2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/qx.png"/></em>等待接单<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><b>申请售后</b></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    				</ul>
-	    				<div class="resultNone">
-	    					<p>
-	    						<img src="images/no_result.png"/>
-	    					</p>
-	    					<p>
-	    						查询条件内无内容
-	    					</p>
-	    				</div>
-	    			</div>
-	    			<div class="pagenation clearfix">
-	    				<div class="pageBox clearfix r">
-	    					<ul class="page clearfix l">
-		    					<li class="l"><a href="javascript:;"><span>&lt;</span></a></li>
-		    					<li class="l"><a href="javascript:;" class="on"><i>1</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>2</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>3</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>4</i></a></li>
-		    					<li class="l"><a href="javascript:;"><em>&gt;</em></a></li>
-		    				</ul>
-		    				<div class="jumping l">
-		    					跳至<input type="text" class="borderNone"placeholder="1"/>页<a href="javascript:;">跳转</a>
-		    				</div>
-	    				</div>
-	    				
-	    			</div>
-	    		</div>
+    			<div class="explanation">
+    				<dl>
+    					<dt>充值相关说明：</dt>
+    					<dd>1、充值资金即时到账，如因网络延迟未即时到账，请操作  <a href="javascript:;">自动补单</a></dd>
+    					<dd>2、充值手续费为第三方支付公司收取，并非本站收取；</dd>
+    					<dd>3、充值资金如在7天内未使用，可在充值记录内操作原路退回，原路退款不包含充值手续费,如有疑议请勿充值。</dd>
+    				</dl>
+    			</div>
     		</div>
     		
     	</div>
@@ -272,4 +218,5 @@
     </div>
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/recharge.js" type="text/javascript" charset="utf-8"></script>
 </html>

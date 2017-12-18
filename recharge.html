@@ -49,14 +49,20 @@
     	</div>
     </div>
     <!--允昌卡盟顶部-->
-    <div class="header">
-    	<h2>
+   <div class="header clearfix">
+    	<h2 class="l">
     		<img src="images/logo.png" alt="" />
     	</h2>
-    	<div class="search clearfix">
+    	<div class="search clearfix l">
     		<input type="text" class="l borderNone"/>
     		<a href="javascript:;" class="l"><i class="iconfont icon-sousuo"></i></a>
     	</div>
+    	<div class="rmCon clearfix l">
+			<a href="javascript:;" class="l yellow">【官方直充】快刷名片赞（日刷100万+）</a>
+			<a href="javascript:;" class="l orange">【官方直充】快刷名片赞（日刷100万+）</a>
+			<a href="javascript:;" class="l green">【官方直充】快刷名片赞（日刷100万+）</a>
+			
+		</div>
     </div>
     <!--买家中心-->
     <div class="container clearfix">
@@ -67,31 +73,32 @@
     			<h2>买家中心</h2>
     			<ul>
     				<li><span>编号</span>:<em>10086</em></li>
-    				<li><span>余额</span>:<em class="hot">15231.00</em></li>
+    				<li><span>余额</span>:<em class="hot">15231.00</em><a href="javascript:;">刷新</a></li>
     				<li><span>级别</span>:<em>核心经销商</em></li>
+    				<li><span>上级</span>:<em>上级代理昵称</em></li>
     			</ul>
     			<h3>
-    				<span>充值</span>
-    				<em>升级</em>
+    				<span>余额充值</span>
+    				<em>账户升级</em>
     			</h3>
     		</div>
     		<!--买家功能-->
     		<div class="setCusInfo">
     			<dl class="shmj">
     				<dt>买家功能</dt>
-    				<dd><a href="jvascript:;">买家首页</a></dd>
-    				<dd><a href="jvascript:;">目录分类</a></dd>
-    				<dd><a href="jvascript:;">我的收藏</a></dd>
+    				<dd><a href="customerCenter.html">首页推荐</a></dd>
+    				<dd><a href="catalog.html">目录分类</a></dd>
+    				<dd><a href="myCollection.html">我的收藏</a></dd>
     			</dl>
     			<dl class="shdd">
     				<dt>订单管理</dt>
-    				<dd><a href="jvascript:;">我的订单</a></dd>
-    				<dd><a href="jvascript:;">订单售后</a></dd>
+    				<dd><a href="myOrder.html">订单明细</a></dd>
+    				<dd><a href="afterSale.html">订单售后</a></dd>
     			</dl>
     			<dl class="shzh">
     				<dt>账户资金</dt>
-    				<dd class="on"><a href="jvascript:;">账户充值</a></dd>
-    				<dd><a href="jvascript:;">充值记录</a></dd>
+    				<dd class="on"><a href="recharge.html">账户充值</a></dd>
+    				<dd><a href="record.html">充值记录</a></dd>
     				<dd><a href="jvascript:;">账户提现</a></dd>
     				<dd><a href="jvascript:;">提现记录</a></dd>
     				<dd><a href="jvascript:;">资金明细</a></dd>
@@ -106,29 +113,43 @@
     	</div>
     	<!--右边内容区域-->
     	<div class="rBox l">
+    		<!--右边广告-->
+    		<div class="adv">
+    			<div class="advBox">
+    				<ul>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！1</a></li>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！2</a></li>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！3</a></li>
+	    			</ul>
+    			</div>
+    		</div>
     		<!--账户充值-->
     		<div class="recharge">
     			<div class="rechargeMain">
+    				<dl>
+    					<dt>卡乐购系统-账户充值保障</dt>
+    					<dd>充值后7天内未消费或账户余额足够的情况下，可在"账户充值记录"内操作原路退款。退款金额不包含充值手续费。(目前暂只支持微信通道)</dd>
+    				</dl>
     				<h2>选择支付渠道</h2>
     				<ul>
     					<li>
-    						<input type="radio" name="wallet"/><span>微信支付</span>
+    						<input type="radio" name="wallet" id="wx"/><label for="wx" class="wx">微信支付</label>
     					</li>
     					<li>
-    						<input type="radio" name="wallet" /><em>支付宝支付</em>
+    						<input type="radio" name="wallet" id="zfb"/><label for="zfb" class="zfb">支付宝支付</label>
     					</li>
     					<li>
-    						<input type="radio" name="wallet" /><i>QQ钱包支付</i>
+    						<input type="radio" name="wallet" id="qqqb"/><label for="qqqb" class="qqqb">QQ钱包支付</label>
     					</li>
     				</ul>
-    				<h3><input type="text" placeholder="输入充值金额（1-10000之间）"/></h3>
+    				<h3><input type="text" placeholder="输入充值金额（1-10000之间）" class="borderNone"/></h3>
     				<h4>充值手续费1.00，实际需支付金额11.00</h4>
     				<button class="borderNone">立即充值</button>
     			</div>
-    			<div class="">
+    			<div class="explanation">
     				<dl>
     					<dt>充值相关说明：</dt>
-    					<dd>1、充值资金即时到账，如因网络延迟未即时到账，请操作  自动补单</dd>
+    					<dd>1、充值资金即时到账，如因网络延迟未即时到账，请操作  <a href="javascript:;">自动补单</a></dd>
     					<dd>2、充值手续费为第三方支付公司收取，并非本站收取；</dd>
     					<dd>3、充值资金如在7天内未使用，可在充值记录内操作原路退回，原路退款不包含充值手续费,如有疑议请勿充值。</dd>
     				</dl>
@@ -138,13 +159,32 @@
     	</div>
     </div>
     <!--底部相同区域-->
-    <div class="footer">
-    	<p>
-    		© 2008-2018 Jiangsu JiaChan Network Technology Co. Ltd.    <br />
-			<a href="javascript:;">运营商：深圳腾捷网络科技有限公司</a> <br />
-			<a href="javascript:;">ICP备案号：沪ICP备13042253号-1 </a><br />
-			<a href="javascript:;" class="tousu">投诉该网站</a>
-    	</p>
+    <div class="footer clearfix">
+    	<div class="footerLeft clearfix l">
+    		<ul class="clearfix">
+	    		<li class="l"><a href="javascript:;">平台公告</a></li>
+	    		<li class="l"><a href="javascript:;">关于我们</a></li>
+	    		<li class="l"><a href="javascript:;">联系我们</a></li>
+	    		<li class="l"><a href="javascript:;">帮助中心</a></li>
+	    		<li class="l"><a href="javascript:;">开放API</a></li>
+	    		<li class="l last"><a href="javascript:;">站长自定义链接</a></li>
+	    	</ul>
+	    	<p>
+	    		© CopyRight by 聚会卡盟版权所有  运营商：<a href="javascript:;">深圳腾捷网络科技有限公司</a>    <br />
+				<a href="javascript:;">ICP备案号：沪ICP备13042253号-1 </a>
+				<a href="javascript:;" class="tousu">公安部备案号：52062402000137</a>
+	    	</p>
+    	</div>
+    	<ul class="r fx">
+    		<li>分享此网址或二维码,推荐其他人成为您的下级客户</li>
+    		<li>
+    			<input type="text" readonly="readonly" placeholder="http://www.kalegou.com/?10086" class="borderNone"/>
+    			<button type="button" class="borderNone">复制</button>
+    			<span>
+    				<em><img src="images/code.png"/></em>
+    			</span>
+    		</li>
+    	</ul>
     </div>
     <!--loading进度条-->
     <div class="loading hide">
@@ -152,4 +192,5 @@
     </div>
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/recharge.js" type="text/javascript" charset="utf-8"></script>
 </html>
