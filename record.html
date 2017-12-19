@@ -99,7 +99,7 @@
     				<dt>账户资金</dt>
     				<dd><a href="recharge.html">账户充值</a></dd>
     				<dd class="on"><a href="record.html">充值记录</a></dd>
-    				<dd><a href="jvascript:;">账户提现</a></dd>
+    				<dd><a href="getCash.html">账户提现</a></dd>
     				<dd><a href="jvascript:;">提现记录</a></dd>
     				<dd><a href="jvascript:;">资金明细</a></dd>
     			</dl>
@@ -125,7 +125,8 @@
     		</div>
     		<!--充值记录-->
     		<div class="record">
-    			<h2>充值金额 :<span>1211</span>原路退款 :<em>1111</em></h2>
+    			<h3>当前位置</h3>
+    			<!--<h2>充值金额 :<span>1211</span>原路退款 :<em>1111</em></h2>-->
     			<div class="recordInfo">
     				<div class="daysOfBox clearfix">
     					<input type="" name="" id="" value="" class="l"/>
@@ -140,12 +141,20 @@
     				<div class="recordInfos">
     					<table border="" cellspacing="" cellpadding="">
     						<tr>
-    							<th>充值时间</th>
+    							<th class="czsjTitle">充值时间</th>
     							<th>商家支付单号</th>
     							<th>支付渠道</th>
     							<th>充值金额</th>
     							<th>
-    								<select name="">
+    								<div class="select">
+    									<h4><em>支付状态</em><span><img src="images/sanjiao.png"/></span></h4>
+    									<ul class="option hide">
+    										<li>等待支付</li>
+    										<li>等待关闭</li>
+    										<li>支付完成</li>
+    									</ul>
+    								</div>
+    								<!--<select name="" class="borderNone">
 	    								<option value="">
 	    									等待支付
 	    								</option>
@@ -155,9 +164,9 @@
 	    								<option value="">
 	    									支付完成
 	    								</option>
-	    							</select>
+	    							</select>-->
     							</th>
-    							<th>退款信息</th>
+    							<th>支付状态</th>
     							<th>操作</th>
     						</tr>
     						<tr>
@@ -165,8 +174,8 @@
     							<td class="zfdh">17113068331154400265</td>
     							<td class="zfqd">支付宝</td>
     							<td class="czje">1.00</td>
-    							<td class="zfzt">等待支付</td>
-    							<td class="tkxx"><span>已退款</span><em>10.00</em><i>（2017-06-07 12:12:12）</i></td>
+    							<td class="syzt">等待支付</td>
+    							<td class="zfzt"><em>支付完成</em><span>(已原路返回)</span></td>
     							<td class="cz"><a href="javascript:;">自助补单</a></td>
     						</tr>
     					</table>
@@ -175,7 +184,7 @@
     			<div class="explanation">
     				<dl>
     					<dt>充值相关说明：</dt>
-    					<dd>1、充值资金即时到账，如因网络延迟未即时到账，请操作  <a href="javascript:;">自动补单</a></dd>
+    					<dd>1、充值资金即时到账，如因网络延迟未即时到账，请操作未到账补单；</dd>
     					<dd>2、充值手续费为第三方支付公司收取，并非本站收取；</dd>
     					<dd>3、充值资金如在7天内未使用，可在充值记录内操作原路退回，原路退款不包含充值手续费,如有疑议请勿充值。</dd>
     				</dl>
@@ -218,5 +227,5 @@
     </div>
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/recharge.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/record.js" type="text/javascript" charset="utf-8"></script>
 </html>
