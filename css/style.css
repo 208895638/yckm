@@ -65,7 +65,23 @@ body, html {
       .topBar .count .myCount ul li i {
         margin-right: 5px; }
       .topBar .count .myCount ul li a {
-        color: #fff; }
+        color: #fff;
+        position: relative; }
+        .topBar .count .myCount ul li a em {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          background: #ff0000;
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          display: block; }
+    .topBar .count .myCount ul li:hover {
+      background: #0075dc; }
+    .topBar .count .myCount ul .on {
+      background: #0075dc; }
+    .topBar .count .myCount ul .customer {
+      color: #b0daff; }
 
 .header {
   width: 100%;
@@ -102,6 +118,25 @@ body, html {
       .header .search a i {
         font-size: 17px;
         color: #000000; }
+  .header .Common li {
+    font: 14px/76px "微软雅黑";
+    padding: 0 23px;
+    background: url(../images/line.png) no-repeat right center; }
+    .header .Common li a {
+      color: #060606; }
+    .header .Common li a:hover {
+      color: #0088ff; }
+    .header .Common li .on {
+      color: #0088ff; }
+  .header .Common .last {
+    background: none; }
+  .header h3 {
+    font: 14px/76px "微软雅黑";
+    margin-right: 34px; }
+    .header h3 a {
+      padding-left: 20px;
+      color: #0088ff;
+      background: url(../images/settings.png) no-repeat left center; }
   .header .rmCon a {
     display: block;
     font: 13px/37px "微软雅黑";
@@ -118,6 +153,40 @@ body, html {
     border: 2px solid #55c916; }
   .header .rmCon .orange {
     border: 2px solid #ff5a00; }
+
+#rocket-to-top {
+  background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+  cursor: default;
+  display: block;
+  height: 250px;
+  margin: -125px 0 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 80%;
+  width: 149px;
+  z-index: 11; }
+  #rocket-to-top div {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 149px; }
+  #rocket-to-top .level-2 {
+    background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+    display: none;
+    height: 250px;
+    opacity: 0;
+    z-index: 1; }
+  #rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2; }
 
 .footer {
   padding: 34px 30px; }
@@ -332,10 +401,11 @@ body, html {
   margin-top: 22px; }
   .container .lBox {
     width: 182px;
-    margin: 0 0.8% 0 3%;
+    margin: 0 22px 0 31px;
     background: #ffffff; }
     .container .lBox .customerCenter {
-      border-bottom: 2px solid #eeefef; }
+      border-bottom: 2px solid #eeefef;
+      padding-bottom: 20px; }
       .container .lBox .customerCenter h2 {
         font: 15px/50px "微软雅黑";
         color: #afafaf;
@@ -360,7 +430,13 @@ body, html {
         .container .lBox .customerCenter ul .hot {
           color: #ff4e00; }
       .container .lBox .customerCenter h3 {
-        font-size: 0; }
+        font: 12px/30px "微软雅黑";
+        text-align: center;
+        margin: 14px 0; }
+        .container .lBox .customerCenter h3 a {
+          padding: 7px 10px;
+          background: #0088ff;
+          color: #fff; }
         .container .lBox .customerCenter h3 span, .container .lBox .customerCenter h3 em {
           display: inline-block;
           vertical-align: top;
@@ -412,14 +488,29 @@ body, html {
         background: url(../images/zhzj.png) no-repeat 24% center; }
       .container .lBox .setCusInfo .shdl dt {
         background: url(../images/dltc.png) no-repeat 24% center; }
+  .container .fix {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    margin: 0; }
   .container .rBox {
-    width: 81%;
+    width: 80%;
     min-height: 600px;
-    position: relative; }
+    position: relative;
+    min-height: 840px;
+    background: #fff; }
     .container .rBox .mjsy {
-      width: 100%; }
+      width: 100%;
+      background: #eeefef; }
       .container .rBox .mjsy .leftBox {
         width: 73%; }
+        .container .rBox .mjsy .leftBox .title {
+          font: 16px/68px "微软雅黑";
+          color: #ff5d3d;
+          text-align: center;
+          font-weight: bold;
+          border-bottom: 12px solid #eeefef;
+          background: #fff; }
         .container .rBox .mjsy .leftBox .rmzq {
           padding-left: 20px;
           background: #fff;
@@ -550,6 +641,8 @@ body, html {
   position: absolute;
   right: 26px;
   top: 0;
+  bottom: 0;
+  margin: auto;
   padding-left: 28px;
   display: inline-block;
   height: 44px;
@@ -567,6 +660,31 @@ body, html {
   background: #fff;
   height: 100%;
   min-height: 500px; }
+  .mlfl .recommend {
+    width: 95%;
+    margin: 0 auto;
+    font: 12px/12px "微软雅黑";
+    border: 2px solid transparent;
+    background: #fff2f2; }
+    .mlfl .recommend li {
+      padding: 9px 11px;
+      margin: 0 10px; }
+      .mlfl .recommend li a {
+        color: #0c0c0c; }
+    .mlfl .recommend .first {
+      margin-left: 0; }
+  .mlfl .hy {
+    border: 2px solid #ff6161; }
+  .mlfl .qq {
+    border: 2px solid #2fcb1f; }
+  .mlfl .hz {
+    border: 2px solid #ffd927; }
+  .mlfl .lz {
+    border: 2px solid #189aff; }
+  .mlfl .lvz {
+    border: 2px solid #ae2fff; }
+  .mlfl .hlw {
+    border: 2px solid #ff6161; }
   .mlfl h2 {
     width: 95%;
     margin: 5px auto;
@@ -582,14 +700,16 @@ body, html {
   .mlfl table {
     width: 95%;
     margin: 5px auto; }
-    .mlfl table td {
+    .mlfl table th {
+      font-weight: 600; }
+    .mlfl table th, .mlfl table td {
       border: 1px solid #e2e2e3;
       text-align: center;
       font: 12px/32px "微软雅黑";
       color: #000000; }
-      .mlfl table td a {
+      .mlfl table th a, .mlfl table td a {
         color: #000000; }
-      .mlfl table td a:hover {
+      .mlfl table th a:hover, .mlfl table td a:hover {
         text-decoration: underline; }
 
 .myCollection {
@@ -633,8 +753,11 @@ body, html {
           color: #fa9c22;
           font-weight: bold; }
         .myCollection .tableBox table td button {
-          padding: 7px 10px;
+          padding: 0 10px;
           background: #4a9fff;
+          font: 12px/32px "微软雅黑";
+          height: 32px;
+          display: inline-block;
           color: #fff;
           border-radius: 2px; }
         .myCollection .tableBox table td .colorPink {
@@ -762,7 +885,7 @@ body, html {
   .myOrder .orderInfo .orderBox {
     overflow-x: auto; }
     .myOrder .orderInfo .orderBox ul {
-      width: 1830px; }
+      width: 1684px; }
     .myOrder .orderInfo .orderBox .ddxx {
       width: 608px; }
     .myOrder .orderInfo .orderBox .czzh {
@@ -813,7 +936,8 @@ body, html {
         font: 12px/56px "微软雅黑";
         color: #000; }
         .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span em {
-          color: #ff910f; }
+          color: #ff910f;
+          margin-left: 16px; }
         .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span i {
           padding: 8px;
           background: #ff4e4e;
@@ -845,21 +969,37 @@ body, html {
         color: #878787; }
         .myOrder .orderInfo .orderBox .resultNone p img {
           margin: 0 auto; }
-  .myOrder .orderInfo .pagenation .pageBox .page {
-    margin-right: 30px; }
-    .myOrder .orderInfo .pagenation .pageBox .page li {
-      font: 12px/54px "微软雅黑"; }
-      .myOrder .orderInfo .pagenation .pageBox .page li a {
-        color: #666; }
-        .myOrder .orderInfo .pagenation .pageBox .page li a span, .myOrder .orderInfo .pagenation .pageBox .page li a em, .myOrder .orderInfo .pagenation .pageBox .page li a i {
-          padding: 12px;
-          border: 1px solid #e2e2e3;
-          margin: 0 2px; }
-      .myOrder .orderInfo .pagenation .pageBox .page li .on {
-        color: #fff; }
-        .myOrder .orderInfo .pagenation .pageBox .page li .on span, .myOrder .orderInfo .pagenation .pageBox .page li .on em, .myOrder .orderInfo .pagenation .pageBox .page li .on i {
-          border: 1px solid #ff4401;
-          background: #ff4401; }
+  .myOrder .orderInfo .pagenation .pageBox .pages {
+    padding: 14px 0; }
+    .myOrder .orderInfo .pagenation .pageBox .pages a {
+      margin: 0 4px; }
+      .myOrder .orderInfo .pagenation .pageBox .pages a span, .myOrder .orderInfo .pagenation .pageBox .pages a em {
+        display: inline-block; }
+      .myOrder .orderInfo .pagenation .pageBox .pages a i {
+        display: inline-block;
+        height: 30px;
+        color: #222222;
+        font: 12px/30px "微软雅黑"; }
+      .myOrder .orderInfo .pagenation .pageBox .pages a em {
+        width: 28px;
+        height: 30px;
+        border: 1px solid #e2e2e3;
+        border-radius: 1px;
+        position: relative; }
+        .myOrder .orderInfo .pagenation .pageBox .pages a em img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto; }
+      .myOrder .orderInfo .pagenation .pageBox .pages a span {
+        padding: 0 20px;
+        height: 30px;
+        color: #222222;
+        font: 12px/30px "微软雅黑";
+        border: 1px solid #e2e2e3;
+        border-radius: 1px; }
   .myOrder .orderInfo .pagenation .pageBox .jumping {
     font: 12px/54px "微软雅黑";
     color: #000; }
@@ -954,15 +1094,17 @@ body, html {
   .afterSale .saleInfo .saleBox {
     overflow-x: auto; }
     .afterSale .saleInfo .saleBox ul {
-      width: 1625px; }
+      width: 1870px; }
     .afterSale .saleInfo .saleBox .xgdd {
       width: 608px; }
     .afterSale .saleInfo .saleBox .shzt {
       width: 220px; }
+    .afterSale .saleInfo .saleBox .shnr {
+      width: 320px; }
     .afterSale .saleInfo .saleBox .zt {
       width: 330px; }
     .afterSale .saleInfo .saleBox .cz {
-      width: 140px; }
+      width: 158px; }
     .afterSale .saleInfo .saleBox .xq {
       width: 214px; }
     .afterSale .saleInfo .saleBox .saleBoxTitle {
@@ -1000,10 +1142,16 @@ body, html {
         color: #077cff; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ts, .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx {
         padding: 7px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .shnr {
+        width: 320px; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx {
         background: #4e99ff;
         color: #fff;
         margin: 0 4px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .jxtj {
+        border: 1px solid #e2e2e3;
+        padding: 7px;
+        margin: 0 8px; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ts {
         border: 1px solid #e2e2e3;
         color: #000; }
@@ -1039,28 +1187,43 @@ body, html {
         color: #878787; }
         .afterSale .saleInfo .saleBox .resultNone p img {
           margin: 0 auto; }
-  .afterSale .saleInfo .pagenation .pageBox .page {
-    margin-right: 30px; }
-    .afterSale .saleInfo .pagenation .pageBox .page li {
-      font: 12px/54px "微软雅黑"; }
-      .afterSale .saleInfo .pagenation .pageBox .page li a {
-        color: #666; }
-        .afterSale .saleInfo .pagenation .pageBox .page li a span, .afterSale .saleInfo .pagenation .pageBox .page li a em, .afterSale .saleInfo .pagenation .pageBox .page li a i {
-          padding: 12px;
-          border: 1px solid #e2e2e3;
-          margin: 0 2px; }
-      .afterSale .saleInfo .pagenation .pageBox .page li .on {
-        color: #fff; }
-        .afterSale .saleInfo .pagenation .pageBox .page li .on span, .afterSale .saleInfo .pagenation .pageBox .page li .on em, .afterSale .saleInfo .pagenation .pageBox .page li .on i {
-          border: 1px solid #ff4401;
-          background: #ff4401; }
+  .afterSale .saleInfo .pagenation .pageBox .pages {
+    padding: 14px 0; }
+    .afterSale .saleInfo .pagenation .pageBox .pages a {
+      margin: 0 4px; }
+      .afterSale .saleInfo .pagenation .pageBox .pages a span, .afterSale .saleInfo .pagenation .pageBox .pages a em {
+        display: inline-block; }
+      .afterSale .saleInfo .pagenation .pageBox .pages a i {
+        display: inline-block;
+        height: 30px;
+        color: #222222;
+        font: 12px/30px "微软雅黑"; }
+      .afterSale .saleInfo .pagenation .pageBox .pages a em {
+        width: 28px;
+        height: 30px;
+        border: 1px solid #e2e2e3;
+        border-radius: 1px;
+        position: relative; }
+        .afterSale .saleInfo .pagenation .pageBox .pages a em img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto; }
+      .afterSale .saleInfo .pagenation .pageBox .pages a span {
+        padding: 0 20px;
+        height: 30px;
+        color: #222222;
+        font: 12px/30px "微软雅黑";
+        border: 1px solid #e2e2e3;
+        border-radius: 1px; }
   .afterSale .saleInfo .pagenation .pageBox .jumping {
     font: 12px/54px "微软雅黑";
     color: #000; }
     .afterSale .saleInfo .pagenation .pageBox .jumping input {
       width: 38px;
       height: 32px;
-      font: 12px/32px "微软雅黑";
       padding-left: 12px;
       border: 1px solid #e2e2e3;
       margin: 0 9px; }
@@ -1083,11 +1246,12 @@ body, html {
   .recharge .rechargeMain {
     padding-bottom: 114px;
     margin-left: 26px;
-    border-bottom: 1px solid #e2e2e3; }
+    border-bottom: 1px solid #e2e2e3;
+    position: relative; }
     .recharge .rechargeMain .Prompt {
       text-align: center;
       margin-bottom: 38px; }
-      .recharge .rechargeMain .Prompt dl {
+      .recharge .rechargeMain .Prompt .Prompt {
         display: inline-block;
         height: 46px;
         border: 1px solid #85da8d;
@@ -1097,9 +1261,9 @@ body, html {
         padding: 10px 60px;
         color: #10b122;
         background: url(../images/safe.png) no-repeat 16px center; }
-        .recharge .rechargeMain .Prompt dl dt, .recharge .rechargeMain .Prompt dl dd {
+        .recharge .rechargeMain .Prompt .Prompt dt, .recharge .rechargeMain .Prompt .Prompt dd {
           text-align: left; }
-        .recharge .rechargeMain .Prompt dl dd {
+        .recharge .rechargeMain .Prompt .Prompt dd {
           color: #72ab78; }
     .recharge .rechargeMain h2 {
       width: 255px;
@@ -1171,6 +1335,34 @@ body, html {
       margin: 10px auto; }
     .recharge .rechargeMain .borderColor {
       border: 1px solid #0071d3; }
+    .recharge .rechargeMain .mask {
+      position: absolute;
+      width: 260px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+      .recharge .rechargeMain .mask dl {
+        position: relative; }
+        .recharge .rechargeMain .mask dl dt {
+          height: 64px;
+          width: 100%;
+          position: relative; }
+          .recharge .rechargeMain .mask dl dt img {
+            position: absolute;
+            height: 44px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+        .recharge .rechargeMain .mask dl dd {
+          font: 16px/32px "微软雅黑";
+          color: #333;
+          text-align: center; }
+        .recharge .rechargeMain .mask dl .info {
+          color: #878787;
+          font-size: 12px; }
   .recharge .explanation {
     margin-left: 26px; }
     .recharge .explanation dl {
@@ -1362,8 +1554,7 @@ body, html {
       color: #999;
       padding-left: 166px; }
     .getCash .getCashInfo .rkqd p {
-      padding: 0 12px;
-      background: #e8f4ff; }
+      padding: 0 12px; }
     .getCash .getCashInfo button {
       display: block;
       width: 62px;

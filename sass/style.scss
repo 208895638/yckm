@@ -102,7 +102,27 @@ $sp_green:#ff489a;//浅紫色
                     }
                     a{
                         color: #fff;
+                        position: relative;
+                        em{
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 3px;
+                            background: #ff0000;
+                            position: absolute;
+                            top: -3px;
+                            right: -3px;
+                            display: block;
+                        }
                     }
+                }
+                li:hover{
+                    background: #0075dc;
+                }
+                .on{
+                    background: #0075dc;
+                }
+                .customer{
+                    color: #b0daff;
                 }
             }
         }
@@ -149,6 +169,37 @@ $sp_green:#ff489a;//浅紫色
             }
         }
     }
+    .Common{
+//      margin-left: 40px;
+        li{
+            font: 14px/76px "微软雅黑";
+             padding: 0 23px;
+             background: url(../images/line.png) no-repeat right center;
+            a{
+                color: #060606;
+               
+            }
+            a:hover{
+                color: #0088ff;
+            }
+            .on{
+                color: #0088ff;
+            }
+        }
+        
+        .last{
+            background: none;
+        }
+    }
+    h3{
+        font: 14px/76px "微软雅黑";
+        margin-right: 34px;
+        a{
+            padding-left: 20px;
+            color: #0088ff;
+            background: url(../images/settings.png) no-repeat left center;
+        }
+    }
     .rmCon{
         a{
           display: block;
@@ -171,6 +222,44 @@ $sp_green:#ff489a;//浅紫色
         .orange{
             border: 2px solid #ff5a00;
         }
+    }
+}
+//小火箭
+#rocket-to-top {
+  background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+  cursor: default;
+  display: block;
+  height: 250px;
+  margin: -125px 0 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 80%;
+  width: 149px;
+  z-index: 11; 
+  div{
+        left: 0;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 149px; 
+  } 
+  .level-2{
+        background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+        display: none;
+        height: 250px;
+        opacity: 0;
+        z-index: 1;
+    }
+    .level-3{
+        background: none repeat scroll 0 0 transparent;
+        cursor: pointer;
+        display: block;
+        height: 150px;
+        z-index: 2; 
     }
 }
 //底部样式
@@ -432,10 +521,11 @@ to {transform:rotate(180deg);}
     margin-top: 22px;
     .lBox{
         width: 182px;
-        margin:0 0.8% 0 3%;
+        margin:0 22px 0 31px;
         background: #ffffff;
         .customerCenter{
             border-bottom: 2px solid #eeefef;
+            padding-bottom: 20px;
             h2{
                 font: 15px/50px "微软雅黑";
                 color: #afafaf;
@@ -467,7 +557,14 @@ to {transform:rotate(180deg);}
                 }
             }
             h3{
-                font-size: 0;
+                font:12px/30px "微软雅黑";
+                text-align: center;
+                margin: 14px 0;
+                a{
+                    padding: 7px 10px;
+                    background: $color_blue;
+                    color: #fff;
+                }
                 span,em{
                     display: inline-block;
                     vertical-align: top;
@@ -539,15 +636,34 @@ to {transform:rotate(180deg);}
             }
         }
     }
+    .fix{
+        position: fixed;
+        top: 0;
+        left: 30px;
+        
+        margin:0;
+    }
     .rBox{
-        width: 81%;
+        width: 80%;
         min-height: 600px;
         position: relative;
+        min-height: 840px;
+        background: #fff;
+//      left: 235px;
         .mjsy{
             width: 100%;
+            background: #eeefef;
             .leftBox{
                 width: 73%;
 //              margin-left: 1.7%;
+                .title{
+                    font: 16px/68px "微软雅黑";
+                    color: #ff5d3d;
+                    text-align: center;
+                    font-weight: bold;
+                    border-bottom: 12px solid #eeefef;
+                    background: #fff;
+                }
                 .rmzq{
                     padding-left: 20px;
                     background: #fff;
@@ -732,6 +848,8 @@ to {transform:rotate(180deg);}
     position: absolute;
     right: 26px;
     top: 0;
+    bottom: 0;
+    margin: auto;
     padding-left: 28px;
     display: inline-block;
     height: 44px;
@@ -752,6 +870,41 @@ to {transform:rotate(180deg);}
     background: #fff;
     height: 100%;
     min-height: 500px;
+    .recommend{
+        width: 95%;
+        margin:0 auto;
+        font: 12px/12px "微软雅黑";
+        border: 2px solid transparent;
+        background: #fff2f2;
+        li{
+            padding: 9px 11px;
+            margin: 0 10px;
+            a{
+                color: #0c0c0c;
+            }
+        }
+        .first{
+            margin-left: 0;
+        }
+    }
+    .hy{
+        border: 2px solid #ff6161;
+    }
+    .qq{
+        border: 2px solid #2fcb1f;
+    }
+    .hz{
+        border: 2px solid #ffd927;
+    }
+    .lz{
+        border: 2px solid #189aff;
+    }
+    .lvz{
+        border: 2px solid #ae2fff;
+    }
+    .hlw{
+        border: 2px solid #ff6161;
+    }
     h2{
         width: 95%;
         margin:5px auto;
@@ -770,7 +923,10 @@ to {transform:rotate(180deg);}
     table{
         width: 95%;
         margin:5px auto;
-        td{
+        th{
+            font-weight: 600;
+        }
+        th,td{
             border:1px solid $line_gray;
             text-align: center;
             font: 12px/32px "微软雅黑";
@@ -833,8 +989,11 @@ to {transform:rotate(180deg);}
                     font-weight: bold;
                 }
                 button{
-                    padding: 7px 10px;
+                    padding: 0 10px;
                     background: #4a9fff;
+                    font: 12px/32px "微软雅黑";
+                    height: 32px;
+                    display: inline-block;
                     color: #fff;
                     border-radius: 2px;
                 }
@@ -1001,7 +1160,7 @@ to {transform:rotate(180deg);}
         .orderBox{
             overflow-x: auto;
             ul{
-                width: 1830px;
+                width: 1684px;
             }
             .ddxx{
                 width: 608px;
@@ -1072,6 +1231,7 @@ to {transform:rotate(180deg);}
 //                              padding-left: 20px;
 //                              background: url(../images/sj.png) no-repeat left center;
                                 color: #ff910f;
+                                margin-left: 16px;
                             }
                             i{
                                 padding: 8px;
@@ -1118,26 +1278,85 @@ to {transform:rotate(180deg);}
                 }
             }
         }
+//      .pagenation{
+//          .pageBox{
+//              .page{
+//                  margin-right: 30px;
+//                  li{
+//                      font: 12px/54px "微软雅黑";
+//                      a{
+//                          color: $color_6;
+//                          span,em,i{
+//                              padding: 12px;
+//                              border:1px solid $line_gray;
+//                              margin:0 2px;
+//                          }
+//                      }
+//                      .on{
+//                          color: #fff;
+//                          span,em,i{
+//                             border:1px solid #ff4401; 
+//                             background: #ff4401;
+//                          }
+//                      }
+//                  }
+//              }
+//              .jumping{
+//                  font: 12px/54px "微软雅黑";
+//                  color: #000;
+//                  input{
+//                      width: 38px;
+//                      height: 32px;
+//                      padding-left: 12px;
+//                      border: 1px solid $line_gray;
+//                      margin:0 9px;
+//                  }
+//                  a{
+//                      padding: 9px 12px;
+//                      color: $color_6;
+//                      border: 1px solid $line_gray;
+//                      margin:0 8px;
+//                  }
+//              }
+//          }
+//      }
         .pagenation{
             .pageBox{
-                .page{
-                    margin-right: 30px;
-                    li{
-                        font: 12px/54px "微软雅黑";
-                        a{
-                            color: $color_6;
-                            span,em,i{
-                                padding: 12px;
-                                border:1px solid $line_gray;
-                                margin:0 2px;
+                .pages{
+                    padding: 14px 0 ;
+                    a{
+                        margin:0 4px;
+                        span,em{
+                            display: inline-block;
+                        }
+                        i{
+                            display: inline-block;
+                            height: 30px;
+                            color: #222222;
+                            font: 12px/30px "微软雅黑";
+                        }
+                        em{
+                            width: 28px;
+                            height: 30px;
+                            border: 1px solid $line_gray;
+                            border-radius: 1px ;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                margin: auto;
                             }
                         }
-                        .on{
-                            color: #fff;
-                            span,em,i{
-                               border:1px solid #ff4401; 
-                               background: #ff4401;
-                            }
+                        span{
+                            padding:0 20px ;
+                            height: 30px;
+                            color: #222222;
+                            font: 12px/30px "微软雅黑";
+                            border: 1px solid $line_gray;
+                            border-radius: 1px ;
                         }
                     }
                 }
@@ -1260,7 +1479,7 @@ to {transform:rotate(180deg);}
         .saleBox{
             overflow-x: auto;
             ul{
-                width: 1625px;
+                width: 1870px;
             }
             .xgdd{
                 width: 608px;
@@ -1268,11 +1487,14 @@ to {transform:rotate(180deg);}
             .shzt{
                 width: 220px;
             }
+            .shnr{
+                width: 320px;
+            }
             .zt{
                 width: 330px;
             }
             .cz{
-                width: 140px;
+                width: 158px;
             }
             .xq{
                 width: 214px;
@@ -1323,10 +1545,18 @@ to {transform:rotate(180deg);}
                         .ts,.cx{
                             padding: 7px;
                         }
+                        .shnr{
+                            width: 320px;
+                        }
                         .cx{
                             background: #4e99ff;
                             color: #fff;
                             margin:0 4px;
+                        }
+                        .jxtj{
+                            border: 1px solid $line_gray;
+                            padding: 7px;
+                            margin: 0 8px;
                         }
                         .ts{
                            border: 1px solid $line_gray;
@@ -1351,6 +1581,7 @@ to {transform:rotate(180deg);}
                             a{
                                 color: #0088ff;
                             }
+                            
                         }
                         .ddxx {
                             text-align: left;
@@ -1379,26 +1610,86 @@ to {transform:rotate(180deg);}
                 }
             }
         }
-        .pagenation{
+//      .pagenation{
+//          .pageBox{
+//              .page{
+//                  margin-right: 30px;
+//                  li{
+//                      font: 12px/54px "微软雅黑";
+//                      a{
+//                          color: $color_6;
+//                          span,em,i{
+//                              padding: 12px;
+//                              border:1px solid $line_gray;
+//                              margin:0 2px;
+//                          }
+//                      }
+//                      .on{
+//                          color: #fff;
+//                          span,em,i{
+//                             border:1px solid #ff4401; 
+//                             background: #ff4401;
+//                          }
+//                      }
+//                  }
+//              }
+//              .jumping{
+//                  font: 12px/54px "微软雅黑";
+//                  color: #000;
+//                  input{
+//                      width: 38px;
+//                      height: 32px;
+//                      font: 12px/32px "微软雅黑";
+//                      padding-left: 12px;
+//                      border: 1px solid $line_gray;
+//                      margin:0 9px;
+//                  }
+//                  a{
+//                      padding: 9px 12px;
+//                      color: $color_6;
+//                      border: 1px solid $line_gray;
+//                      margin:0 8px;
+//                  }
+//              }
+//          }
+//      }
+.pagenation{
             .pageBox{
-                .page{
-                    margin-right: 30px;
-                    li{
-                        font: 12px/54px "微软雅黑";
-                        a{
-                            color: $color_6;
-                            span,em,i{
-                                padding: 12px;
-                                border:1px solid $line_gray;
-                                margin:0 2px;
+                .pages{
+                    padding: 14px 0 ;
+                    a{
+                        margin:0 4px;
+                        span,em{
+                            display: inline-block;
+                        }
+                        i{
+                            display: inline-block;
+                            height: 30px;
+                            color: #222222;
+                            font: 12px/30px "微软雅黑";
+                        }
+                        em{
+                            width: 28px;
+                            height: 30px;
+                            border: 1px solid $line_gray;
+                            border-radius: 1px ;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                margin: auto;
                             }
                         }
-                        .on{
-                            color: #fff;
-                            span,em,i{
-                               border:1px solid #ff4401; 
-                               background: #ff4401;
-                            }
+                        span{
+                            padding:0 20px ;
+                            height: 30px;
+                            color: #222222;
+                            font: 12px/30px "微软雅黑";
+                            border: 1px solid $line_gray;
+                            border-radius: 1px ;
                         }
                     }
                 }
@@ -1408,7 +1699,6 @@ to {transform:rotate(180deg);}
                     input{
                         width: 38px;
                         height: 32px;
-                        font: 12px/32px "微软雅黑";
                         padding-left: 12px;
                         border: 1px solid $line_gray;
                         margin:0 9px;
@@ -1444,10 +1734,11 @@ to {transform:rotate(180deg);}
         padding-bottom: 114px;
         margin-left: 26px;
         border-bottom: 1px solid $line_gray;
+        position: relative;
         .Prompt{
             text-align: center;
             margin-bottom: 38px;
-            dl{
+            .Prompt{
                 display: inline-block;
     //          width: 746px;
                 height:46px ;
@@ -1553,6 +1844,40 @@ to {transform:rotate(180deg);}
         }
         .borderColor{
             border: 1px solid  $hover_blue;
+        }
+        .mask{
+            position: absolute;
+            width: 260px;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            dl{
+                position: relative;
+                dt{
+                    height: 64px;
+                    width: 100%;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        height: 44px;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin:auto;
+                    }
+                }
+                dd{
+                    font: 16px/32px "微软雅黑";
+                    color: $color_3;
+                    text-align: center;
+                }
+                .info{
+                    color: #878787;
+                    font-size: 12px;
+                }
+            }
         }
     }
     .explanation{
@@ -1808,7 +2133,6 @@ to {transform:rotate(180deg);}
         .rkqd{
             p{
                 padding:0 12px;
-                background: #e8f4ff;
             }
         }
         button{

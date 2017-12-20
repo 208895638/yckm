@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
     <title>允昌卡盟-提现明细</title>
     <link rel="stylesheet" href="css/reset.css" />
@@ -11,18 +11,18 @@
 </head>
 <body>
     <div class="topBar clearfix">
-    	<h2 class="l"> 
-    		允昌卡盟
-    	</h2>
+    	<!--<h2 class="l"> 
+    		切换系统
+    	</h2>-->
     	<ul class="l content clearfix"> 
     		<li class="l"><a href="javascript:;">买家中心</a></li>
     		<li class="l"><a href="javascript:;">供货管理</a></li>
     		<li class="l"><a href="javascript:;">分站管理</a></li>
-    		<li class="l"><a href="javascript:;">开放API</a></li>
+    		<!--<li class="l"><a href="javascript:;">开放API</a></li>
     		<li class="l"><a href="javascript:;">帮助中心</a></li>
     		<li class="l"><a href="javascript:;"><span class="iconfont icon-erji"></span>联系我们</a></li>
     		<li class="l"><a href="javascript:;"><span class="iconfont icon-xiaoxi"></span>消息通知<em></em></a></li>
-    		<li class="l"><a href="javascript:;"><span class="iconfont icon-diedaisanicon45"></span>APP下载</a></li>
+    		<li class="l"><a href="javascript:;"><span class="iconfont icon-diedaisanicon45"></span>APP下载</a></li>-->
     	</ul>
     	<div class="count r">
     		<div class="countBox clearfix hide">
@@ -35,14 +35,15 @@
     		</div>
     		<div class="myCount ">
     			 <ul class="clearfix">
-    			 	<li class="l">
-    			 		<i></i>Hi!张大飞
+    			 	<li class="l customer">
+    			 		<i></i><span>Hi,张大飞</span><em>(客户编号10081)</em>
     			 	</li>
     			 	<li class="l">
-    			 		<a href="javascript:;"><i class="iconfont icon-zhanghu"></i>账户管理</a>
+    			 		<a href="javascript:;">账户管理</a>
     			 	</li>
+    			 	<li class="l"><a href="javascript:;">通知<em></em></a></li>
     			 	<li class="l">
-    			 		<a href="javascript:;"><i class="iconfont icon-tuichu"></i>退出</a>
+    			 		<a href="javascript:;">退出</a>
     			 	</li>
     			 </ul>
     		</div>
@@ -53,15 +54,29 @@
     	<h2 class="l">
     		<img src="images/logo.png" alt="" />
     	</h2>
+    	<div class="Common l">
+    		<ul class="clearfix">
+    			<li class="l"><a href="customerCenter.html">买家首页</a></li>
+    			<li class="l"><a href="catalog.html">商品分类</a></li>
+    			<li class="l"><a href="myCollection.html">我的收藏</a></li>
+    			<li class="l"><a href="myOrder.html">我的订单</a></li>
+    			<li class="l last"><a href="afterSale.html">订单售后</a></li>
+    		</ul>
+    	</div>
+    	<h3 class="l"><a href="javascript:;">自定义链接</a></h3>
     	<div class="search clearfix l">
     		<input type="text" class="l borderNone"/>
     		<a href="javascript:;" class="l"><i class="iconfont icon-sousuo"></i></a>
     	</div>
-    	<div class="rmCon clearfix l">
-			<a href="javascript:;" class="l yellow">【官方直充】快刷名片赞（日刷100万+）</a>
-			<a href="javascript:;" class="l orange">【官方直充】快刷名片赞（日刷100万+）</a>
-			<a href="javascript:;" class="l green">【官方直充】快刷名片赞（日刷100万+）</a>
-			
+    	<!--右边广告-->
+		<div class="adv l">
+			<div class="advBox">
+				<ul>
+    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！1</a></li>
+    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！2</a></li>
+    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！3</a></li>
+    			</ul>
+			</div>
 		</div>
     </div>
     <!--买家中心-->
@@ -75,11 +90,13 @@
     				<li><span>编号</span>:<em>10086</em></li>
     				<li><span>余额</span>:<em class="hot">15231.00</em><a href="javascript:;">刷新</a></li>
     				<li><span>级别</span>:<em>核心经销商</em></li>
-    				<li><span>上级</span>:<em>上级代理昵称</em></li>
+    				<!--<li><span>上级</span>:<em>上级代理昵称</em></li>-->
     			</ul>
     			<h3>
-    				<span>余额充值</span>
-    				<em>账户升级</em>
+    				
+    				<a href="javascript:;">充值</a>
+    				<a href="javascript:;">提现</a>
+    				<a href="javascript:;">升级</a>
     			</h3>
     		</div>
     		<!--买家功能-->
@@ -113,126 +130,56 @@
     	</div>
     	<!--右边内容区域-->
     	<div class="rBox l">
-    		<!--右边广告-->
-    		<div class="adv">
-    			<div class="advBox">
-    				<ul>
-	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！1</a></li>
-	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！2</a></li>
-	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！3</a></li>
-	    			</ul>
-    			</div>
-    		</div>
-    		<!--我的订单-->
-    		<div class="myOrder">
+    		<!--提现明细-->
+    		<div class="detail">
     			<div class="myOrderTop clearfix">
     				<div class="daysOfBox l">
     					<input type="" name="" id="" value="" class="l"/>
+    					<button class="yesterday l borderNone">昨天</button>
 	    				<button class="now l borderNone">今天</button>
-	    				<button class="yesterday l borderNone">昨天</button>
-	    				<button class="daysOfThirty l borderNone">近30天</button>
-	    				<button class="daysOfNinety l borderNone">近90天</button>
-	    				<button class="section l borderNone">30天~90天</button>	
+	    				<button class="thisWeek l borderNone">本周</button>
+	    				<button class="thisMonth l borderNone">本月</button>
+	    				<button class="jyz l borderNone">近1周</button>
+	    				<button class="jyy l borderNone">近1月</button>
+	    				<button class="jsy l borderNone">近三月</button>	
     				</div>
     				<div class="orderSearch l clearfix">
-    					<label for="search" class="l">已购商品查询</label>
-    					<input type="text" name="" id="search"placeholder="请输入商品名称" class="l borderNone"/>
+    					<label for="search" class="l">下级客户编号</label>
+    					<input type="text" name="" id="search"placeholder="请输入需查询的编号" class="l borderNone"/>
     					<button class="borderNone l">查询</button>
     				</div>
     			</div>
-    			<div class="orderInfo">
-    				<div class="orderState">
-    					<ul class="clearfix ">
-		    				<li class="l on"><a href="javascript:;">全部</a></li>
-		    				<li class="l"><a href="javascript:;">等待处理</a></li>
-		    				<li class="l"><a href="javascript:;">处理中</a></li>
-		    				<li class="l"><a href="javascript:;">交易完成<span></span></a></li>
-		    				<li class="l"><a href="javascript:;">交易取消<span></span></a></li>
-		    			</ul>
-		    			<p></p>
-    				</div>
-	    			
-	    			<div class="orderBox">
-	    				<ul class="orderBoxTitle clearfix">
-	    					<li class="l ddxx"><a href="javascript:;">订单信息</a></li>
-	    					<li class="l czzh"><a href="javascript:;">充值帐号</a></li>
-	    					<li class="l gmsl"><a href="javascript:;">数量</a></li>
-	    					<li class="l ddzj"><a href="javascript:;">购价</a></li>
-	    					<li class="l sj"><a href="javascript:;">售价</a></li>
-	    					<li class="l jxlr"><a href="javascript:;">经销利润</a></li>
-	    					<li class="l ddzt"><a href="javascript:;">状态</a></li>
-	    					<li class="l cz"><a href="javascript:;">操做</a></li>
-	    					<li class="l ddxq"><a href="javascript:;">详情</a></li>
-	    				</ul>
-	    				<ul class="orderBoxBottom">
-	    					<li>
-	    						<h2>订单号：<span>10000000000000</span> 下单时间：<em>2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/wc.png"/></em>等待处理<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><em>12小时后未处理可退单</em></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    					<li>
-	    						<h2><span>订单号：10000000000000</span> <em>下单时间：2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/sj.png"/></em>等待接单<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><i>退单</i></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    					<li>
-	    						<h2><span>订单号：10000000000000</span> <em>下单时间：2017-06-07 12:12:12</em>  </h2>
-	    						<div class="orderInfo clearfix">
-	    							<span class="ddxx l over">【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</span>
-	    							<span class="czzh l over">XUWANGCHAN</span>
-	    							<span class="gmsl l">×2</span>
-	    							<span class="ddzj l">¥ 2.00</span>
-	    							<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>
-	    							<span class="ddzt l over"><em><img src="images/qx.png"/></em>等待接单<a href="javascript:;">(有退款)</a></span>
-	    							<span class="cz l over"><b>申请售后</b></span>
-	    							<span class="ddxq l">订单详情</span>
-	    						</div>
-	    					</li>
-	    				</ul>
-	    				<div class="resultNone">
-	    					<p>
-	    						<img src="images/no_result.png"/>
-	    					</p>
-	    					<p>
-	    						查询条件内无内容
-	    					</p>
-	    				</div>
-	    			</div>
-	    			<div class="pagenation clearfix">
-	    				<div class="pageBox clearfix r">
-	    					<ul class="page clearfix l">
-		    					<li class="l"><a href="javascript:;"><span>&lt;</span></a></li>
-		    					<li class="l"><a href="javascript:;" class="on"><i>1</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>2</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>3</i></a></li>
-		    					<li class="l"><a href="javascript:;"><i>4</i></a></li>
-		    					<li class="l"><a href="javascript:;"><em>&gt;</em></a></li>
-		    				</ul>
-		    				<div class="jumping l">
-		    					跳至<input type="text" class="borderNone"placeholder="1"/>页<a href="javascript:;">跳转</a>
-		    				</div>
-	    				</div>
-	    				
-	    			</div>
+    			<div class="detailInfo">
+    				<table border="" cellspacing="" cellpadding="">
+    					<tr>
+    						<th>提成时间</th>
+    						<th>下级客户</th>
+    						<th>提成订单信息</th>
+    						<th>购买数量</th>
+    						<th>交易金额</th>
+    						<th>赚取提成</th>
+    					</tr>
+    					<tr>
+    						<td class="tcsj">
+    							2017-11-30 18:48:35
+    						</td>
+    						<td class="xjkh">
+    							10086
+    						</td>
+    						<td class="ddxx">
+    							商品名称商品名称商品名称商品名称商品名称
+    						</td>
+    						<td class="gmsl">
+    							x 2
+    						</td>
+    						<td class="jyje">
+    							125.10
+    						</td>
+    						<td class="zqtc">
+    							2.00
+    						</td>
+    					</tr>
+    				</table>
 	    		</div>
     		</div>
     		
@@ -270,6 +217,13 @@
     <div class="loading hide">
     	<h2><span><img src="images/loading.png"/></span><em>正在加载</em></h2>
     </div>
+    <!--回到顶部-->
+    <div style="display: none;" id="rocket-to-top">
+	    <div style="opacity:0;display: block;" class="level-2"></div>
+	    <div class="level-3"></div>
+	</div>
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/rocketToTop.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </html>
