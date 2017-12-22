@@ -10,11 +10,14 @@ body, html {
   background: #0088ff;
   position: relative;
   height: 44px; }
-  .topBar h2 {
+  .topBar h2, .topBar h3 {
     font: 13px/43px "微软雅黑";
     font-weight: bold;
     color: #91ccff;
     padding: 0 30px; }
+  .topBar h3 {
+    color: #fff;
+    background: url(../images/sanjiao_white.png) no-repeat 86% center; }
   .topBar .content li {
     height: 43px; }
     .topBar .content li a {
@@ -57,17 +60,18 @@ body, html {
       height: 43px; }
   .topBar .count .myCount {
     margin-right: 4px; }
-    .topBar .count .myCount ul li {
+    .topBar .count .myCount ul .per {
       padding: 0 10px;
       font: 12px/43px "微软雅黑";
       display: block;
-      color: #fff; }
-      .topBar .count .myCount ul li i {
+      color: #fff;
+      position: relative; }
+      .topBar .count .myCount ul .per i {
         margin-right: 5px; }
-      .topBar .count .myCount ul li a {
+      .topBar .count .myCount ul .per a {
         color: #fff;
         position: relative; }
-        .topBar .count .myCount ul li a em {
+        .topBar .count .myCount ul .per a em {
           width: 6px;
           height: 6px;
           border-radius: 3px;
@@ -76,10 +80,32 @@ body, html {
           top: -3px;
           right: -3px;
           display: block; }
-    .topBar .count .myCount ul li:hover {
-      background: #0075dc; }
+      .topBar .count .myCount ul .per .newsInfo {
+        width: 333px;
+        position: absolute;
+        top: 43px;
+        z-index: 10;
+        left: -241px;
+        background: #fff;
+        box-shadow: -3px 3px 5px #ccc; }
+        .topBar .count .myCount ul .per .newsInfo li {
+          padding: 14px 39px 11px 19px;
+          border-bottom: 1px solid #e2e2e3; }
+          .topBar .count .myCount ul .per .newsInfo li dl {
+            width: 100%; }
+            .topBar .count .myCount ul .per .newsInfo li dl dt, .topBar .count .myCount ul .per .newsInfo li dl dd {
+              font: 12px/25px "微软雅黑";
+              color: #747474; }
+            .topBar .count .myCount ul .per .newsInfo li dl dt {
+              color: #0088ff; }
+          .topBar .count .myCount ul .per .newsInfo li dl:hover dt {
+            text-decoration: underline; }
+    .topBar .count .myCount ul .tongzhi {
+      background: url(../images/sanjiao_white.png) no-repeat right center; }
+    .topBar .count .myCount ul .per:hover {
+      background-color: #0075dc; }
     .topBar .count .myCount ul .on {
-      background: #0075dc; }
+      background-color: #0075dc; }
     .topBar .count .myCount ul .customer {
       color: #b0daff; }
 
@@ -145,14 +171,59 @@ body, html {
     margin: 18px 15px;
     border: 2px solid #ffb400;
     border-radius: 2px; }
-  .header .rmCon .yellow {
+  .header .rmCon .cjhy {
     border: 2px solid #ffb400; }
-  .header .rmCon .blue {
+  .header .rmCon .qqhy {
     border: 2px solid #008aff; }
-  .header .rmCon .green {
+  .header .rmCon .qqhz {
     border: 2px solid #55c916; }
-  .header .rmCon .orange {
+  .header .rmCon .qqlz {
     border: 2px solid #ff5a00; }
+  .header .rmCon .qqlz {
+    border: 2px solid #55c916; }
+  .header .rmCon .hlw {
+    border: 2px solid #ff5a00; }
+  .header .tuijian dt, .header .tuijian dd {
+    font: 12px/76px "微软雅黑";
+    margin: 0 5px; }
+    .header .tuijian dt a, .header .tuijian dd a {
+      padding: 7px 11px;
+      color: #000; }
+    .header .tuijian dt .cjhy, .header .tuijian dd .cjhy {
+      border: 2px solid #ff6161;
+      background: #fff2f2; }
+    .header .tuijian dt .qqhy, .header .tuijian dd .qqhy {
+      border: 2px solid #5dd751;
+      background: #f4fff2; }
+    .header .tuijian dt .qqhz, .header .tuijian dd .qqhz {
+      border: 2px solid #ffea87;
+      background: #fffef2; }
+    .header .tuijian dt .qqlz, .header .tuijian dd .qqlz {
+      border: 2px solid #5cb8ff;
+      background: #f2fbff; }
+    .header .tuijian dt .qqlvz, .header .tuijian dd .qqlvz {
+      border: 2px solid #ae2fff;
+      background: #fdf2ff; }
+    .header .tuijian dt .hlw, .header .tuijian dd .hlw {
+      border: 2px solid #ff6161;
+      background: #fff2f2; }
+  .header .tuijian dt {
+    position: relative; }
+    .header .tuijian dt a {
+      background: #ff8a00;
+      color: #fff; }
+  .header .tuijian dt::before {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 31px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid #ff8a00;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent; }
 
 #rocket-to-top {
   background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
@@ -368,7 +439,7 @@ body, html {
     background: #fff;
     top: 35px; }
     .select ul li {
-      text-indent: 20px;
+      text-align: center;
       font: 12px/35px "微软雅黑"; }
     .select ul li:hover {
       background: #e2e2e3; }
@@ -488,6 +559,48 @@ body, html {
         background: url(../images/zhzj.png) no-repeat 24% center; }
       .container .lBox .setCusInfo .shdl dt {
         background: url(../images/dltc.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos li {
+      padding-left: 36%;
+      font: 12px/36px "微软雅黑"; }
+      .container .lBox .setCusInfos li a {
+        color: #333;
+        position: relative; }
+    .container .lBox .setCusInfos li {
+      border-left: 4px solid #fff; }
+    .container .lBox .setCusInfos li:hover {
+      border-left: 4px solid #0088ff;
+      background-color: #ecf6ff; }
+      .container .lBox .setCusInfos li:hover a {
+        color: #0088ff; }
+    .container .lBox .setCusInfos .sygk {
+      background: url(../images/sygl.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .spfl {
+      background: url(../images/spfl.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .wdsc {
+      background: url(../images/wdsc.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .wddd {
+      background: url(../images/wddd.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .ddsh {
+      background: url(../images/ddsh.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .txjl {
+      background: url(../images/txjl.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .czjl {
+      background: url(../images/czjl.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .txmx {
+      background: url(../images/txmx.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .zjmx {
+      background: url(../images/zjmx.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .wdxj {
+      background: url(../images/wdxj.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .tcmx {
+      background: url(../images/tcmx.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .tglj {
+      background: url(../images/tglj.png) no-repeat 24% center; }
+    .container .lBox .setCusInfos .on {
+      border-left: 4px solid #0088ff;
+      background-color: #ecf6ff; }
+      .container .lBox .setCusInfos .on a {
+        color: #0088ff; }
   .container .fix {
     position: fixed;
     top: 0;
@@ -719,8 +832,9 @@ body, html {
   .myCollection h2 {
     width: 97%;
     margin: 0 auto;
-    font: 16px/66px "微软雅黑";
-    color: #000; }
+    font: 16px/52px "微软雅黑";
+    color: #000;
+    margin-bottom: 17px; }
     .myCollection h2 a {
       padding-left: 24px;
       background: url(../images/goback.png) no-repeat left center;
@@ -858,6 +972,25 @@ body, html {
       left: 0;
       bottom: 0;
       z-index: 1; }
+    .myOrder .orderInfo .orderState .export {
+      position: absolute;
+      font: 12px/33px "微软雅黑";
+      color: #000000;
+      right: 0;
+      bottom: 0;
+      z-index: 2; }
+      .myOrder .orderInfo .orderState .export dl {
+        display: inline-block;
+        font: 12px/33px "微软雅黑"; }
+        .myOrder .orderInfo .orderState .export dl dt, .myOrder .orderInfo .orderState .export dl dd {
+          padding-left: 22px; }
+          .myOrder .orderInfo .orderState .export dl dt a, .myOrder .orderInfo .orderState .export dl dd a {
+            color: #0088ff; }
+        .myOrder .orderInfo .orderState .export dl dt {
+          background: url(../images/excel.png) no-repeat left center;
+          margin: 0 12px; }
+        .myOrder .orderInfo .orderState .export dl dd {
+          background: url(../images/txt.png) no-repeat left center; }
     .myOrder .orderInfo .orderState ul {
       position: relative;
       z-index: 2; }
@@ -935,6 +1068,12 @@ body, html {
       .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span {
         font: 12px/56px "微软雅黑";
         color: #000; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span .ddjd {
+          color: #ff6600; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span .jywc {
+          color: #09a618; }
+        .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span .jyqx {
+          color: #a2a2a2; }
         .myOrder .orderInfo .orderBox .orderBoxBottom li .orderInfo span em {
           color: #ff910f;
           margin-left: 16px; }
@@ -1104,9 +1243,11 @@ body, html {
     .afterSale .saleInfo .saleBox .zt {
       width: 330px; }
     .afterSale .saleInfo .saleBox .cz {
-      width: 158px; }
+      width: 190px; }
     .afterSale .saleInfo .saleBox .xq {
       width: 214px; }
+    .afterSale .saleInfo .saleBox .gmsl, .afterSale .saleInfo .saleBox .ddzj {
+      width: 144px; }
     .afterSale .saleInfo .saleBox .saleBoxTitle {
       background: #f1f1f1;
       margin-top: 20px;
@@ -1136,6 +1277,8 @@ body, html {
         border-bottom: 1px solid #e2e2e3; }
         .afterSale .saleInfo .saleBox .saleBoxBottom li h2 span {
           margin-right: 14px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .gmsl, .afterSale .saleInfo .saleBox .saleBoxBottom li .ddzj {
+        width: 144px; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .xgdd {
         text-align: left;
         text-indent: 16px;
@@ -1144,10 +1287,16 @@ body, html {
         padding: 7px; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .shnr {
         width: 320px; }
-      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx {
-        background: #4e99ff;
-        color: #fff;
-        margin: 0 4px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cx, .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cxtj, .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .qrwc {
+        border: 1px solid #e2e2e3;
+        margin: 0 5px;
+        border-radius: 4px;
+        color: #000; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .cxtj, .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .qrwc {
+        padding: 7px; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .qrwc {
+        background: #35b5ff;
+        color: #fff; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .jxtj {
         border: 1px solid #e2e2e3;
         padding: 7px;
@@ -1155,6 +1304,12 @@ body, html {
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ts {
         border: 1px solid #e2e2e3;
         color: #000; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .ddjd {
+        color: #ff6600; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .jywc {
+        color: #09a618; }
+      .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos .jyqx {
+        color: #a2a2a2; }
       .afterSale .saleInfo .saleBox .saleBoxBottom li .saleInfos span {
         font: 12px/56px "微软雅黑";
         color: #000; }
@@ -1462,7 +1617,7 @@ body, html {
           color: #000;
           text-align: left; }
         .record .recordInfo .recordInfos table .czsj {
-          width: 320px;
+          width: 232px;
           text-align: center; }
         .record .recordInfo .recordInfos table .zfdh {
           width: 281px; }
@@ -1474,8 +1629,12 @@ body, html {
           width: 200px; }
         .record .recordInfo .recordInfos table .zfzt {
           width: 300px; }
-          .record .recordInfo .recordInfos table .zfzt span {
+          .record .recordInfo .recordInfos table .zfzt .orange {
             color: #ff5a00; }
+          .record .recordInfo .recordInfos table .zfzt .gray {
+            color: #bcbcbc; }
+          .record .recordInfo .recordInfos table .zfzt .green {
+            color: #11b609; }
         .record .recordInfo .recordInfos table .cz {
           width: 184px; }
           .record .recordInfo .recordInfos table .cz a {
@@ -1483,6 +1642,28 @@ body, html {
             border-radius: 4px;
             border: 1px solid #e2e2e3;
             color: #424242; }
+          .record .recordInfo .recordInfos table .cz .yltk {
+            background: #ff4a4a;
+            color: #fff; }
+      .record .recordInfo .recordInfos .num {
+        margin-top: 16px; }
+        .record .recordInfo .recordInfos .num .export {
+          font: 12px/33px "微软雅黑";
+          color: #000000; }
+          .record .recordInfo .recordInfos .num .export i {
+            margin-right: 16px; }
+          .record .recordInfo .recordInfos .num .export dl {
+            display: inline-block;
+            font: 12px/33px "微软雅黑"; }
+            .record .recordInfo .recordInfos .num .export dl dt, .record .recordInfo .recordInfos .num .export dl dd {
+              padding-left: 22px; }
+              .record .recordInfo .recordInfos .num .export dl dt a, .record .recordInfo .recordInfos .num .export dl dd a {
+                color: #0088ff; }
+            .record .recordInfo .recordInfos .num .export dl dt {
+              background: url(../images/excel.png) no-repeat left center;
+              margin: 0 12px; }
+            .record .recordInfo .recordInfos .num .export dl dd {
+              background: url(../images/txt.png) no-repeat left center; }
   .record .explanation dl {
     padding-top: 9px; }
     .record .explanation dl dt, .record .explanation dl dd {
@@ -1564,3 +1745,159 @@ body, html {
       color: #fff;
       background: #239fff;
       margin-left: 166px; }
+
+.detail {
+  padding-top: 70px; }
+  .detail .myOrderTop {
+    border: 1px solid #daedfa;
+    width: 96%;
+    padding: 28px 0 28px 23px;
+    margin: 0 auto;
+    border-radius: 2px; }
+    .detail .myOrderTop .daysOfBox input {
+      width: 294px;
+      margin-right: 20px; }
+    .detail .myOrderTop .daysOfBox button {
+      font: 12px/22px "微软雅黑";
+      border: 1px solid #9bc6e0;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: #fff;
+      border-radius: 2px;
+      margin-top: 5px; }
+    .detail .myOrderTop .daysOfBox .on {
+      background: #b5e3ff; }
+    .detail .myOrderTop .orderSearch {
+      margin-left: 20px; }
+      .detail .myOrderTop .orderSearch label {
+        font: 12px/32px "微软雅黑";
+        color: #858585; }
+      .detail .myOrderTop .orderSearch button {
+        font: 12px/30px "微软雅黑";
+        background: #1589ff;
+        color: #fff;
+        border-radius: 2px; }
+      .detail .myOrderTop .orderSearch input {
+        font: 12px/30px "微软雅黑";
+        color: #cacaca;
+        height: 30px;
+        border: 1px solid #e2e2e3;
+        border-radius: 2px;
+        margin-left: 10px;
+        padding-left: 10px;
+        margin-right: 8px; }
+  .detail .detailInfo {
+    width: 97%;
+    margin: 0 auto; }
+    .detail .detailInfo .orange {
+      color: #ff5a00; }
+    .detail .detailInfo .green {
+      color: #00b911; }
+    .detail .detailInfo table {
+      width: 100%; }
+      .detail .detailInfo table th, .detail .detailInfo table td {
+        font: 12px/36px "微软雅黑";
+        color: #383838;
+        text-align: left; }
+      .detail .detailInfo table .select {
+        border: none; }
+      .detail .detailInfo table tr {
+        border-bottom: 1px solid #e2e2e3; }
+      .detail .detailInfo table th {
+        background: #f1f1f1; }
+      .detail .detailInfo table .center {
+        text-align: center; }
+      .detail .detailInfo table td {
+        color: #000; }
+      .detail .detailInfo table tr:hover {
+        background: #f1f1f1; }
+      .detail .detailInfo table .tcsj {
+        width: 15.4%; }
+      .detail .detailInfo table .xjkh {
+        width: 11.7%; }
+      .detail .detailInfo table .ddxx {
+        width: 8.8%; }
+      .detail .detailInfo table .gmsl, .detail .detailInfo table .jbc {
+        width: 11.3%; }
+      .detail .detailInfo table .xjgj {
+        width: 13.5%; }
+      .detail .detailInfo table .cjtc {
+        width: 10.6%;
+        font-weight: bold; }
+      .detail .detailInfo table .bdje {
+        font-weight: bold; }
+    .detail .detailInfo .num {
+      margin-top: 16px; }
+      .detail .detailInfo .num .export {
+        font: 12px/33px "微软雅黑";
+        color: #000000; }
+        .detail .detailInfo .num .export i {
+          margin-right: 16px; }
+        .detail .detailInfo .num .export b, .detail .detailInfo .num .export strong {
+          margin-right: 16px; }
+        .detail .detailInfo .num .export dl {
+          display: inline-block;
+          font: 12px/33px "微软雅黑"; }
+          .detail .detailInfo .num .export dl dt, .detail .detailInfo .num .export dl dd {
+            padding-left: 22px; }
+            .detail .detailInfo .num .export dl dt a, .detail .detailInfo .num .export dl dd a {
+              color: #0088ff; }
+          .detail .detailInfo .num .export dl dt {
+            background: url(../images/excel.png) no-repeat left center;
+            margin: 0 12px; }
+          .detail .detailInfo .num .export dl dd {
+            background: url(../images/txt.png) no-repeat left center; }
+
+.subordinate {
+  padding: 50px 20px; }
+  .subordinate .myOrderTop {
+    border: 2px solid #daedfa;
+    padding: 28px 28px; }
+    .subordinate .myOrderTop .daysOfBox input {
+      width: 294px;
+      margin-right: 20px; }
+    .subordinate .myOrderTop .daysOfBox button {
+      font: 12px/22px "微软雅黑";
+      border: 1px solid #9bc6e0;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: #fff;
+      border-radius: 2px;
+      margin-top: 5px; }
+    .subordinate .myOrderTop .daysOfBox .on {
+      background: #b5e3ff; }
+    .subordinate .myOrderTop .orderSearch {
+      margin-left: 20px; }
+      .subordinate .myOrderTop .orderSearch label {
+        font: 12px/32px "微软雅黑";
+        color: #858585; }
+      .subordinate .myOrderTop .orderSearch button {
+        font: 12px/30px "微软雅黑";
+        background: #1589ff;
+        color: #fff;
+        border-radius: 2px; }
+      .subordinate .myOrderTop .orderSearch input {
+        font: 12px/30px "微软雅黑";
+        color: #cacaca;
+        height: 30px;
+        border: 1px solid #e2e2e3;
+        border-radius: 2px;
+        margin-left: 10px;
+        padding: 0 10px;
+        margin-right: 8px; }
+  .subordinate .subordinateInfo {
+    width: 100%; }
+    .subordinate .subordinateInfo table {
+      width: 100%;
+      font: 12px/36px "微软雅黑";
+      color: #333;
+      text-align: center; }
+      .subordinate .subordinateInfo table td {
+        font: 12px/44px "微软雅黑"; }
+      .subordinate .subordinateInfo table .select {
+        margin: 4px auto;
+        border: none; }
+      .subordinate .subordinateInfo table tr {
+        border-bottom: 1px solid #e2e2e3; }
+      .subordinate .subordinateInfo table tr:hover {
+        background: #f1f1f1; }
