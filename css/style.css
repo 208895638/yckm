@@ -331,13 +331,12 @@ body, html {
       background: url(../images/anquan.png) no-repeat left center; }
 
 .loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 999;
+  position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999; }
   .loading h2 {
     width: 138px;
     height: 32px;
@@ -358,7 +357,7 @@ body, html {
       font: 12px/32px "微软雅黑"; }
     .loading h2 span {
       margin-right: 10px;
-      animation: mymove 5s linear infinite; }
+      animation: mymove 2s linear infinite; }
 
 @keyframes mymove {
   from {
@@ -559,48 +558,51 @@ body, html {
         background: url(../images/zhzj.png) no-repeat 24% center; }
       .container .lBox .setCusInfo .shdl dt {
         background: url(../images/dltc.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos li {
-      padding-left: 36%;
-      font: 12px/36px "微软雅黑"; }
-      .container .lBox .setCusInfos li a {
-        color: #333;
-        position: relative; }
-    .container .lBox .setCusInfos li {
-      border-left: 4px solid #fff; }
-    .container .lBox .setCusInfos li:hover {
-      border-left: 4px solid #0088ff;
-      background-color: #ecf6ff; }
-      .container .lBox .setCusInfos li:hover a {
-        color: #0088ff; }
-    .container .lBox .setCusInfos .sygk {
-      background: url(../images/sygl.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .spfl {
-      background: url(../images/spfl.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .wdsc {
-      background: url(../images/wdsc.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .wddd {
-      background: url(../images/wddd.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .ddsh {
-      background: url(../images/ddsh.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .txjl {
-      background: url(../images/txjl.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .czjl {
-      background: url(../images/czjl.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .txmx {
-      background: url(../images/txmx.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .zjmx {
-      background: url(../images/zjmx.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .wdxj {
-      background: url(../images/wdxj.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .tcmx {
-      background: url(../images/tcmx.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .tglj {
-      background: url(../images/tglj.png) no-repeat 24% center; }
-    .container .lBox .setCusInfos .on {
-      border-left: 4px solid #0088ff;
-      background-color: #ecf6ff; }
-      .container .lBox .setCusInfos .on a {
-        color: #0088ff; }
+    .container .lBox .setCusInfos {
+      padding-bottom: 56px; }
+      .container .lBox .setCusInfos li {
+        padding-left: 36%;
+        font: 12px/36px "微软雅黑";
+        border-bottom: 1px solid #f3f3f3; }
+        .container .lBox .setCusInfos li a {
+          color: #333;
+          position: relative; }
+      .container .lBox .setCusInfos li {
+        border-left: 4px solid #fff; }
+      .container .lBox .setCusInfos li:hover {
+        border-left: 4px solid #0088ff;
+        background-color: #ecf6ff; }
+        .container .lBox .setCusInfos li:hover a {
+          color: #0088ff; }
+      .container .lBox .setCusInfos .sygk {
+        background: url(../images/sygl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .spfl {
+        background: url(../images/spfl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wdsc {
+        background: url(../images/wdsc.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wddd {
+        background: url(../images/wddd.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .ddsh {
+        background: url(../images/ddsh.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .txjl {
+        background: url(../images/txjl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .czjl {
+        background: url(../images/czjl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .txmx {
+        background: url(../images/txmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .zjmx {
+        background: url(../images/zjmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wdxj {
+        background: url(../images/wdxj.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .tcmx {
+        background: url(../images/tcmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .tglj {
+        background: url(../images/tglj.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .on {
+        border-left: 4px solid #0088ff;
+        background-color: #ecf6ff; }
+        .container .lBox .setCusInfos .on a {
+          color: #0088ff; }
   .container .fix {
     position: fixed;
     top: 0;
@@ -1892,8 +1894,30 @@ body, html {
       font: 12px/36px "微软雅黑";
       color: #333;
       text-align: center; }
+      .subordinate .subordinateInfo table th {
+        vertical-align: middle; }
       .subordinate .subordinateInfo table td {
+        text-align: center;
         font: 12px/44px "微软雅黑"; }
+        .subordinate .subordinateInfo table td .btn {
+          display: inline-block; }
+          .subordinate .subordinateInfo table td .btn a {
+            font: 12px/20px "微软雅黑";
+            color: #424242;
+            border: 1px solid #d2d2d2;
+            border-radius: 3px;
+            padding: 0 4px; }
+          .subordinate .subordinateInfo table td .btn .blue {
+            background: #0088ff;
+            color: #fff; }
+        .subordinate .subordinateInfo table td .select {
+          display: inline-block;
+          margin: 4px auto;
+          border: none; }
+      .subordinate .subordinateInfo table .khjb {
+        text-align: left; }
+      .subordinate .subordinateInfo table .khjbs {
+        text-align: left; }
       .subordinate .subordinateInfo table .select {
         margin: 4px auto;
         border: none; }
@@ -1901,3 +1925,167 @@ body, html {
         border-bottom: 1px solid #e2e2e3; }
       .subordinate .subordinateInfo table tr:hover {
         background: #f1f1f1; }
+    .subordinate .subordinateInfo .num {
+      margin-top: 16px; }
+      .subordinate .subordinateInfo .num .export {
+        font: 12px/33px "微软雅黑";
+        color: #000000; }
+        .subordinate .subordinateInfo .num .export i {
+          margin-right: 16px; }
+        .subordinate .subordinateInfo .num .export dl {
+          display: inline-block;
+          font: 12px/33px "微软雅黑"; }
+          .subordinate .subordinateInfo .num .export dl dt, .subordinate .subordinateInfo .num .export dl dd {
+            padding-left: 22px; }
+            .subordinate .subordinateInfo .num .export dl dt a, .subordinate .subordinateInfo .num .export dl dd a {
+              color: #0088ff; }
+          .subordinate .subordinateInfo .num .export dl dt {
+            background: url(../images/excel.png) no-repeat left center;
+            margin: 0 12px; }
+          .subordinate .subordinateInfo .num .export dl dd {
+            background: url(../images/txt.png) no-repeat left center; }
+
+.payment {
+  padding-top: 70px; }
+  .payment .myOrderTop {
+    border: 1px solid #daedfa;
+    width: 96%;
+    padding: 28px 0 28px 23px;
+    margin: 0 auto;
+    border-radius: 2px; }
+    .payment .myOrderTop .daysOfBox input {
+      width: 294px;
+      margin-right: 20px; }
+    .payment .myOrderTop .daysOfBox button {
+      font: 12px/22px "微软雅黑";
+      border: 1px solid #9bc6e0;
+      padding: 0 10px;
+      margin: 0 4px;
+      background: #fff;
+      border-radius: 2px;
+      margin-top: 5px; }
+    .payment .myOrderTop .daysOfBox .on {
+      background: #b5e3ff; }
+    .payment .myOrderTop .orderSearch {
+      margin-left: 20px; }
+      .payment .myOrderTop .orderSearch label {
+        font: 12px/32px "微软雅黑";
+        color: #858585; }
+      .payment .myOrderTop .orderSearch button {
+        font: 12px/30px "微软雅黑";
+        background: #1589ff;
+        color: #fff;
+        border-radius: 2px; }
+      .payment .myOrderTop .orderSearch input {
+        font: 12px/30px "微软雅黑";
+        color: #cacaca;
+        height: 30px;
+        border: 1px solid #e2e2e3;
+        border-radius: 2px;
+        margin-left: 10px;
+        padding-left: 10px;
+        margin-right: 8px; }
+  .payment .paymentInfo {
+    width: 97%;
+    margin: 0 auto; }
+    .payment .paymentInfo .orange {
+      color: #ff5a00; }
+    .payment .paymentInfo .green {
+      color: #00b911; }
+    .payment .paymentInfo table {
+      width: 100%; }
+      .payment .paymentInfo table th, .payment .paymentInfo table td {
+        font: 12px/36px "微软雅黑";
+        color: #383838;
+        text-align: left; }
+      .payment .paymentInfo table .select {
+        border: none; }
+      .payment .paymentInfo table tr {
+        border-bottom: 1px solid #e2e2e3; }
+      .payment .paymentInfo table th {
+        background: #f1f1f1; }
+      .payment .paymentInfo table .center {
+        text-align: center; }
+      .payment .paymentInfo table td {
+        color: #000; }
+      .payment .paymentInfo table tr:hover {
+        background: #f1f1f1; }
+      .payment .paymentInfo table .tcsj {
+        width: 15.4%; }
+      .payment .paymentInfo table .xjkh {
+        width: 11.7%; }
+      .payment .paymentInfo table .ddxx {
+        width: 8.8%; }
+      .payment .paymentInfo table .gmsl, .payment .paymentInfo table .jbc {
+        width: 11.3%; }
+      .payment .paymentInfo table .xjgj {
+        width: 13.5%; }
+      .payment .paymentInfo table .cjtc {
+        width: 10.6%;
+        font-weight: bold; }
+      .payment .paymentInfo table .bdje {
+        font-weight: bold; }
+    .payment .paymentInfo .num {
+      margin-top: 16px; }
+      .payment .paymentInfo .num .export {
+        font: 12px/33px "微软雅黑";
+        color: #000000; }
+        .payment .paymentInfo .num .export i {
+          margin-right: 16px; }
+        .payment .paymentInfo .num .export b, .payment .paymentInfo .num .export strong {
+          margin-right: 16px; }
+        .payment .paymentInfo .num .export dl {
+          display: inline-block;
+          font: 12px/33px "微软雅黑"; }
+          .payment .paymentInfo .num .export dl dt, .payment .paymentInfo .num .export dl dd {
+            padding-left: 22px; }
+            .payment .paymentInfo .num .export dl dt a, .payment .paymentInfo .num .export dl dd a {
+              color: #0088ff; }
+          .payment .paymentInfo .num .export dl dt {
+            background: url(../images/excel.png) no-repeat left center;
+            margin: 0 12px; }
+          .payment .paymentInfo .num .export dl dd {
+            background: url(../images/txt.png) no-repeat left center; }
+
+.extension {
+  padding-top: 50px;
+  text-align: center; }
+  .extension h2 {
+    font: 16px/116px "微软雅黑";
+    color: #000000;
+    text-align: center; }
+  .extension .code {
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid #8c8c8c; }
+    .extension .code img {
+      width: 252px; }
+  .extension h3 {
+    font: 12px/44px "微软雅黑";
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px; }
+  .extension h4 {
+    font: 40px/74px "微软雅黑";
+    color: #000000;
+    text-align: center; }
+  .extension h5 {
+    font: 12px/42px "微软雅黑";
+    vertical-align: top;
+    text-align: center; }
+    .extension h5 span, .extension h5 button {
+      display: inline-block;
+      border: 1px solid #e2e2e3; }
+    .extension h5 span {
+      padding: 0 60px 0 12px;
+      margin: 0 8px; }
+    .extension h5 .blue {
+      color: #0088ff; }
+    .extension h5 button {
+      padding: 12px 18px;
+      background: #f3f3f3;
+      color: #000; }
+  .extension h6 {
+    font: 14px/58px "微软雅黑";
+    color: #000000;
+    text-align: center; }

@@ -456,13 +456,12 @@ $sp_green:#ff489a;//浅紫色
 }
 //loading
 .loading{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(000,000,000,0.2);
-    z-index: 999;
+    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
     h2{
         width: 138px;
         height: 32px;
@@ -484,7 +483,7 @@ $sp_green:#ff489a;//浅紫色
         }
         span{
             margin-right: 10px;
-            animation: mymove 5s linear infinite;
+            animation: mymove 2s linear infinite;
         }
     }
 }
@@ -735,9 +734,11 @@ to {transform:rotate(180deg);}
             }
         }
         .setCusInfos{
+            padding-bottom: 56px;
             li{
                 padding-left: 36%;
                 font: 12px/36px "微软雅黑";
+                border-bottom: 1px solid #f3f3f3;
                 a{
                     color: $color_3;  
                     position: relative;
@@ -2605,9 +2606,39 @@ to {transform:rotate(180deg);}
             font: 12px/36px "微软雅黑";
             color: $color_3;
             text-align: center;
-            td{
-                font: 12px/44px "微软雅黑";
+            th{
+                vertical-align: middle;
             }
+            td{
+                text-align: center;
+                font: 12px/44px "微软雅黑";
+                .btn{
+                    display: inline-block;
+                    a{
+                        font: 12px/20px "微软雅黑";
+                        color: #424242;
+                        border: 1px solid #d2d2d2;
+                        border-radius: 3px;
+                        padding: 0 4px;
+                    }
+                    .blue{
+                        background: #0088ff;
+                        color: #fff;
+                    }
+                }
+                
+                .select{
+                    display: inline-block;
+                    margin:4px auto;
+                    border: none;
+                }
+            }
+            .khjb{
+                text-align: left;
+            }
+            .khjbs{
+                    text-align: left;
+                }
             .select{
                 margin:4px auto;
                 border: none;
@@ -2619,5 +2650,228 @@ to {transform:rotate(180deg);}
                 background: #f1f1f1;
             }
         }
+        .num{
+            margin-top: 16px;
+            .export{
+                font: 12px/33px "微软雅黑";
+                color: #000000;
+                i{
+                    margin-right: 16px;
+                }
+                dl{
+                    display: inline-block;
+                    font: 12px/33px "微软雅黑";
+                    dt,dd{
+                        padding-left:22px ;
+                        a{
+                            color: #0088ff;
+                        }
+                    }
+                    dt{
+                        background: url(../images/excel.png) no-repeat left center;
+                        margin:0 12px;
+                    }
+                    dd{
+                        background: url(../images/txt.png) no-repeat left center;
+                    }
+                }
+            }
+        }
+    }
+}
+//提成明细
+.payment{
+    padding-top: 70px;
+    .myOrderTop{
+        border: 1px solid #daedfa;
+        width: 96%;
+        padding: 28px 0 28px 23px;
+        margin:0 auto;
+        border-radius: 2px;
+        .daysOfBox{
+            input{
+                width: 294px;
+                margin-right: 20px;
+            }
+            button{
+                font: 12px/22px "微软雅黑";
+                border: 1px solid #9bc6e0;
+                padding: 0 10px;
+                margin:0 4px;
+                background: #fff;
+                border-radius: 2px;
+                margin-top: 5px;
+            }
+            .on{
+                background: #b5e3ff;
+            }
+        }
+        .orderSearch{
+            margin-left: 20px;
+            label{
+                font: 12px/32px "微软雅黑";
+                color: #858585;
+            }
+            button{
+                font: 12px/30px "微软雅黑";
+                background: #1589ff;
+                color: #fff;
+                border-radius: 2px;
+            }
+            input{
+                font: 12px/30px "微软雅黑";
+                color: #cacaca;
+                height: 30px;
+                border: 1px solid $line_gray;
+                border-radius: 2px;
+                margin-left: 10px;
+                padding-left: 10px;
+                margin-right: 8px;
+            }
+        }
+    }
+    .paymentInfo{
+        width: 97%;
+        margin:0 auto;
+        .orange{
+            color: #ff5a00;
+        }
+        .green{
+            color: #00b911;
+        }    
+        table{
+            width: 100%;
+            th,td{
+                font: 12px/36px "微软雅黑";
+                color: #383838;
+                text-align: left;
+            }
+            .select{
+                border: none;
+            }
+            tr{
+                border-bottom: 1px solid $line_gray;
+            }
+            th{
+                background: #f1f1f1;
+            }
+            .center{
+                text-align: center;
+            }
+            td{
+                color: #000;
+            }
+            tr:hover{
+                background: #f1f1f1;
+            }
+            
+            .tcsj{
+                width: 15.4%;
+            }
+            .xjkh{
+                width: 11.7%;
+            }
+            .ddxx{
+                width: 8.8%;
+            }
+            .gmsl,.jbc{
+                width: 11.3%;
+            }
+            .xjgj{
+                width: 13.5%;
+            }
+            .cjtc{
+                width: 10.6%;
+                font-weight: bold;
+            }
+            .bdje{
+                font-weight: bold;
+            }
+        }
+        .num{
+            margin-top: 16px;
+            .export{
+                font: 12px/33px "微软雅黑";
+                color: #000000;
+                i{
+                    margin-right: 16px;
+                }
+                b,strong{
+                    margin-right: 16px;
+                }
+                dl{
+                    display: inline-block;
+                    font: 12px/33px "微软雅黑";
+                    dt,dd{
+                        padding-left:22px ;
+                        a{
+                            color: #0088ff;
+                        }
+                    }
+                    dt{
+                        background: url(../images/excel.png) no-repeat left center;
+                        margin:0 12px;
+                    }
+                    dd{
+                        background: url(../images/txt.png) no-repeat left center;
+                    }
+                }
+            }
+        }
+    }
+}
+//推广链接
+.extension{
+    padding-top: 50px;
+    text-align: center;
+    h2{
+        font: 16px/116px "微软雅黑";
+        color: #000000;
+        text-align: center;
+    }
+    .code{
+        display: inline-block;
+        padding: 12px;
+        border: 1px solid #8c8c8c;
+        img{
+            width: 252px;
+        }
+    }
+    h3{
+        font: 12px/44px "微软雅黑";
+        color: #000000;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h4{
+        font: 40px/74px "微软雅黑";
+        color: #000000;
+        text-align: center;
+    }
+    h5{
+        font: 12px/42px "微软雅黑";
+        vertical-align: top;
+        text-align: center;
+        span,button{
+            display: inline-block;
+            border: 1px solid $line_gray;
+        }
+        span{
+            padding:0 60px 0 12px ;
+            margin:0 8px;
+        }
+        .blue{
+            color: #0088ff;
+        }
+        button{
+            padding: 12px 18px;
+            background: #f3f3f3;
+            color: #000;
+        }
+    }
+    h6{
+        font: 14px/58px "微软雅黑";
+        color: #000000;
+        text-align: center;
     }
 }
