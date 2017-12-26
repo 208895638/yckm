@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dateRange.css"/>
 </head>
 <body>
     <div class="topBar clearfix">
@@ -205,7 +206,7 @@
     		<div class="myOrder">
     			<div class="myOrderTop clearfix">
     				<div class="daysOfBox l">
-    					<input type="" name="" id="" value="" class="l"/>
+    					<input type="text" id="data" class="l borderNone" placeholder="">
 	    				<button class="now l borderNone">今天</button>
 	    				<button class="yesterday l borderNone">昨天</button>
 	    				<button class="daysOfThirty l borderNone">近30天</button>
@@ -241,13 +242,35 @@
     				</div>
 	    			
 	    			<div class="orderBox">
-	    				<ul class="orderBoxTitle clearfix">
+	    				<table border="" cellspacing="" cellpadding="">
+	    					<tr>
+	    						<th>订单信息</th>
+	    						<th>充值帐号</th>
+	    						<th>购买数量</th>
+	    						<th>订单总价</th>
+	    						<th>订单状态</th>
+	    						<th>操做</th>
+	    						<th>详情</th>
+	    					</tr>
+	    					<div style="border: 1px solid red; padding: 40px;">
+	    						<tr>
+		    						<td></td>
+		    						<td>【阿龙】天天飞车金币10万（可多拍，10-30分钟完成）好友排名</td>
+		    						<td>XUWANGCHAN</td>
+		    						<td>×2</td>
+		    						<td>¥ 2.00</td>
+		    						<td>交易完成</td>
+		    						<td>12小时后未处理可退单</td>
+		    						<td>订单详情</td>
+		    					</tr>
+	    					</div>
+	    					
+	    				</table>
+	    				<!--<ul class="orderBoxTitle clearfix">
 	    					<li class="l ddxx"><a href="javascript:;">订单信息</a></li>
 	    					<li class="l czzh"><a href="javascript:;">充值帐号</a></li>
 	    					<li class="l gmsl"><a href="javascript:;">购买数量</a></li>
 	    					<li class="l ddzj"><a href="javascript:;">订单总价</a></li>
-	    					<!--<li class="l sj"><a href="javascript:;">售价</a></li>
-	    					<li class="l jxlr"><a href="javascript:;">经销利润</a></li>-->
 	    					<li class="l ddzt"><a href="javascript:;">订单状态</a></li>
 	    					<li class="l cz"><a href="javascript:;">操做</a></li>
 	    					<li class="l ddxq"><a href="javascript:;">详情</a></li>
@@ -260,8 +283,6 @@
 	    							<span class="czzh l over">XUWANGCHAN</span>
 	    							<span class="gmsl l">×2</span>
 	    							<span class="ddzj l">¥ 2.00</span>
-	    							<!--<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>-->
 	    							<span class="ddzt l over ddjd"><span class="ddjd">交易完成</span></span>
 	    							<span class="cz l over"><em>12小时后未处理可退单</em></span>
 	    							<span class="ddxq l">订单详情</span>
@@ -274,8 +295,6 @@
 	    							<span class="czzh l over">XUWANGCHAN</span>
 	    							<span class="gmsl l">×2</span>
 	    							<span class="ddzj l">¥ 2.00</span>
-	    							<!--<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>-->
 	    							<span class="ddzt l over ddjd"><span class="ddjd">等待接单</span></span>
 	    							<span class="cz l over"><i>退单</i></span>
 	    							<span class="ddxq l">订单详情</span>
@@ -288,8 +307,6 @@
 	    							<span class="czzh l over">XUWANGCHAN</span>
 	    							<span class="gmsl l">×2</span>
 	    							<span class="ddzj l">¥ 2.00</span>
-	    							<!--<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>-->
 	    							<span class="ddzt l over"><span class="jywc">等待接单</span></span>
 	    							<span class="cz l over"><b>申请售后</b></span>
 	    							<span class="ddxq l">订单详情</span>
@@ -302,14 +319,12 @@
 	    							<span class="czzh l over">XUWANGCHAN</span>
 	    							<span class="gmsl l">×2</span>
 	    							<span class="ddzj l">¥ 2.00</span>
-	    							<!--<span class="sj l">¥ 2.00</span>
-	    							<span class="jxlr l">¥ 0.00</span>-->
 	    							<span class="ddzt l over"><span class="jyqx">交易取消</span></span>
 	    							<span class="cz l over"><b>申请售后</b></span>
 	    							<span class="ddxq l">订单详情</span>
 	    						</div>
 	    					</li>
-	    				</ul>
+	    				</ul>-->
 	    				<div class="resultNone">
 	    					<p>
 	    						<img src="images/no_result.png"/>
@@ -387,5 +402,7 @@
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/plugins/rocketToTop.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/dateRange.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

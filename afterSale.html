@@ -7,6 +7,7 @@
     <title>允昌卡盟-订单售后</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/dateRange.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
@@ -205,7 +206,7 @@
     		<div class="afterSale">
     			<div class="SaleTop clearfix">
     				<div class="daysOfBox l">
-    					<input type="" name="" id="" value="" class="l"/>
+    					<input type="text" id="data" class="l borderNone" placeholder="">
 	    				<button class="now l borderNone">今天</button>
 	    				<button class="yesterday l borderNone">昨天</button>
 	    				<button class="daysOfThirty l borderNone">近30天</button>
@@ -219,7 +220,7 @@
     				</div>
     			</div>
     			<div class="saleInfo">
-    				<div class="saleState">
+    				<!--<div class="saleState">
     					<ul class="clearfix ">
 		    				<li class="l on"><a href="javascript:;">全部</a></li>
 		    				<li class="l"><a href="javascript:;">待受理</a></li>
@@ -227,8 +228,16 @@
 		    				<li class="l"><a href="javascript:;">已回复<em></em></a></li>
 		    			</ul>
 		    			<p></p>
-    				</div>
-	    			
+    				</div>-->
+	    			<div class="tab">
+						<ul class="clearfix">
+		    				<li class="l on"><a href="javascript:;">全部</a></li>
+		    				<li class="l"><a href="javascript:;">待受理</a></li>
+		    				<li class="l"><a href="javascript:;">处理中</a></li>
+		    				<li class="l"><a href="javascript:;">已回复<em></em></a></li>
+		    			</ul>
+		    			<p></p>
+					</div>
 	    			<div class="saleBox">
 	    				<ul class="saleBoxTitle clearfix">
 	    					<li class="l xgdd"><a href="javascript:;">商品信息</a></li>
@@ -380,5 +389,6 @@
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/plugins/rocketToTop.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/dateRange.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 </html>
