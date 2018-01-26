@@ -1,13 +1,11 @@
 $(function(){
-//顶部消息通知划过展开
-	$(".tongzhi").hover(function(){
-		if(!$(".tongzhi .newsInfo").is(":animated")){
-			$(".tongzhi .newsInfo").stop(true,true).slideDown();
-		}
-	},function(){
-		$(".tongzhi .newsInfo").stop(true,true).slideUp();
-	});
-	select($(".khbh"));  //我的下级查询客户编号
+	//代理账户点击展开收缩
+	toggle($(".mjgn"));
+	toggle($(".yemx"));
+	toggle($(".dlgl"));
+	//下拉框
+	select($(".sp"));  //顶部
+	select($(".xts"));  //顶部
 	select($(".khjb"));  //我的下级客户级别
 	//td里面下拉框这部分是单独写的
 	$(".subordinateInfo td .select").on("click",function(){
@@ -79,21 +77,50 @@ function mouseEvent(obj,s){
 		adv(".advBox",s);
 	});
 }
-//模拟下拉框
+//
 function select(obj){
 		//控制select框的缩放
-		console.log(obj)
-	obj.on("click",function(){
-		console.log(obj)
-		$(this).find(".option").slideToggle();
+	var status = 0;
+	obj.on("click",function(e){
+		status ++;
+		e.stopPropagation();
+		e.cancelBubble=true;
+		if(status%2 == 0){
+			$(this).removeClass("select_on");
+//			$(this).find(".option").slideUp(200);
+		}else{
+			$(this).addClass("select_on");
+		}
+		
 	});
 	//选取点击的值
-	obj.find(".option").on("click","li",function(){
+	obj.find(".option").on("click","li a",function(){
+		$(this).parents(".option").removeClass("on");
 		var text = $(this).html();
 		obj.find("em").html(text);
 	});
-	//移出时box缩进
-	obj.mouseleave(function(){
-		$(this).find(".option").slideUp();
-	});
+	$("body").click(function (e) {
+		e.stopPropagation();
+		e.cancelBubble=true;
+		obj.removeClass("select_on");
+		status = 0;
+//      obj.find(".option").slideUp(200);
+        return false;
+    });
 };
+//代理账户点击展开收缩
+function toggle(obj){
+	var status = 0;
+	obj.on("click","dt",function(){
+		status ++;
+		if(status%2 == 1){
+			$(this).addClass("dt_on");
+			$(this).find("i").addClass("current");
+			$(this).siblings().slideUp(200);
+		}else{
+			$(this).removeClass("dt_on");
+			$(this).find("i").removeClass("current");
+			$(this).siblings().slideDown(200);
+		}
+	})
+}

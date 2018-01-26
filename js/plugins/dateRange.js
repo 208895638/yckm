@@ -1041,7 +1041,7 @@ pickerDateRange.prototype.show = function (isCompare, __method) {
     }
     // 如果和输入框左对齐时超出了宽度范围，则右对齐
     if (0 < clientWidth && $("#" + this.calendarId).width() + pos.left > clientWidth) {
-        left = pos.left + $('#' + this.inputId).width() - $("#" + this.calendarId).width() + ((/msie/i.test(navigator.userAgent) && !(/opera/i.test(navigator.userAgent))) ? 5 : 0);
+        left = pos.left + $('#' + this.inputId).width() - $("#" + this.calendarId).width() -35 + ((/msie/i.test(navigator.userAgent) && !(/opera/i.test(navigator.userAgent))) ? 5 : 0);
         __method.mOpts.theme == 'ta' && (left += 50);
     }
     $("#" + this.calendarId).css('left', left + 'px');
