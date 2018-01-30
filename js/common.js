@@ -1,5 +1,6 @@
 $(function(){
 	//代理账户点击展开收缩
+	toggle($(".index"));
 	toggle($(".mjgn"));
 	toggle($(".yemx"));
 	toggle($(".dlgl"));
@@ -7,6 +8,7 @@ $(function(){
 	select($(".sp"));  //顶部
 	select($(".xts"));  //顶部
 	select($(".khjb"));  //我的下级客户级别
+	select($(".syztss"));  //充值记录
 	//td里面下拉框这部分是单独写的
 	$(".subordinateInfo td .select").on("click",function(){
 		$(this).find(".option").slideToggle();
@@ -80,8 +82,10 @@ function mouseEvent(obj,s){
 //
 function select(obj){
 		//控制select框的缩放
+		
 	var status = 0;
 	obj.on("click",function(e){
+		console.log(obj)
 		status ++;
 		e.stopPropagation();
 		e.cancelBubble=true;
@@ -91,7 +95,7 @@ function select(obj){
 		}else{
 			$(this).addClass("select_on");
 		}
-		
+		return false;
 	});
 	//选取点击的值
 	obj.find(".option").on("click","li a",function(){
@@ -104,16 +108,14 @@ function select(obj){
 		e.cancelBubble=true;
 		obj.removeClass("select_on");
 		status = 0;
-//      obj.find(".option").slideUp(200);
-        return false;
     });
 };
 //代理账户点击展开收缩
 function toggle(obj){
-	var status = 0;
-	obj.on("click","dt",function(){
-		status ++;
-		if(status%2 == 1){
+	var count = 0;
+	obj.on("click","dt",function(e){
+		count ++;
+		if(count%2 == 1){
 			$(this).addClass("dt_on");
 			$(this).find("i").addClass("current");
 			$(this).siblings().slideUp(200);
@@ -121,6 +123,7 @@ function toggle(obj){
 			$(this).removeClass("dt_on");
 			$(this).find("i").removeClass("current");
 			$(this).siblings().slideDown(200);
-		}
-	})
+		};
+		
+	});
 }
