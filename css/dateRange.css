@@ -1,4 +1,4 @@
-﻿
+
 /*========== reset ==========*/
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, iframe,hr{margin:0;padding:0;}
 body{font:12px/1.6 Tahoma,microsoft yahei,"微软雅黑","宋体";*font-family:"微软雅黑","宋体";}
@@ -170,51 +170,47 @@ input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
  * TA主题
  * =================================================
  */
-.ta_date{ 
-			border:1px solid #d8d8d8;
-	-webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-	    border-radius: 3px;
-		 background-color: #fefefe;
-	  background-image: -ms-linear-gradient(top, #fafafa, #f5f5f5);
-	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#f5f5f5));
-	  background-image: -moz-linear-gradient(top, #fafafa, #f5f5f5);
-	  background-image: -o-linear-gradient(top, #fafafa, #f5f5f5);
-	  background-image: linear-gradient(top, #fafafa, #f5f5f5);
-	  background-repeat: repeat-x;
-	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-		   box-shadow:0px 1px 1px rgba(218,218,218,0.8);
-		   float:left;
+.ta_date{
+    width: 224px;
+    height: 30px;
+    border: 1px solid #e2e2e3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff !important;
+    float: left;
+    cursor: pointer;
+
 }
 
 .ta_date .date_title {
 	  font-family:Arial;
-	  font-size:14px;
+	  font-size:12px;
 	  	color:#666666;
 		padding:6px 10px;
-		*padding:0px 10px;
-	 border-right:1px solid #d8d8d8;
 	vertical-align:middle;
 	cursor:pointer;
 	*zoom:1;
+    line-height: 32px;
+    padding-left: 16px;
 }
 .ta_date:hover {
 	  background-image:none;
+	  /*
    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);*/
 }
 .ta_date .to{ padding:0 5px;}
 .ta_date .opt_sel{/*====*/
-	width:30px;
-	height:28px;
-	line-height:28px;
+	width:40px;
+	height:30px;
+	line-height:30px;
 	display:inline-block;
 	text-align:center;
 	vertical-align:middle;
 	margin-left:-4px;	
+    float: right;
 }
 .ta_date a.opt_sel:link, .ta_date a.opt_sel:visited {
 	
@@ -225,16 +221,10 @@ input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
 
 .ta_date .i_orderd{
 	display: inline-block;
-	width: 0;
-	height: 0;
-	vertical-align:middle;
-	border-top: 5px solid #727272;
-	border-right: 5px dashed transparent;
-	border-left: 5px dashed transparent;
-	font-size:0;
-	content: "";
-	overflow:hidden;
-	*margin-top:10px;
+	width: 100%;
+    height: 100%;
+    background:url(../images/calendar_img.png) no-repeat center;
+    /* float: right; */
 }
 
 
@@ -280,11 +270,11 @@ input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
 }
 
 .ta_calendar td.first{
-	color:#6590c1;
+	color:#000;
 	background-position:-128px 2px;
 }
 .ta_calendar td.last{
-	color:#6590c1;
+	color:#000;
 	background-position:-200px 2px;
 }
 .ta_calendar td.today{
@@ -344,7 +334,7 @@ input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
 				cursor:pointer;
 			}
 			.calendar-month td.hover,.calendar-month td:hover,.calendar-month caption span:hover{
-				background:#;
+				
 				color:#6590c1;
 				border:1px solid #6590c1;
 				padding: 3px 10px;
@@ -504,3 +494,38 @@ input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
     display: table;
 }
 
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.l {
+    float: left; }
+    
+.service_detail_screening_list {  line-height:30px;}    
+.service_detail_screening_list li 
+{
+    margin:0 7px;
+} 
+
+.ta_date .p0 
+{
+    padding:0 0 0 10px;}
+    .ta_date .pa
+    {
+        float:none;
+        position:relative;
+        }
+         .ta_date .pa i
+         {
+             position:absolute;
+             left:0;
+             right:0;
+             bottom:0;
+             top:0;
+             margin:auto;
+             }

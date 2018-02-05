@@ -6,9 +6,11 @@ $(function(){
 	toggle($(".dlgl"));
 	select($(".sp"));  //顶部
 	select($(".xts"));  //顶部
-	select($(".khbh"));  //精确查询
-	select($(".aaaa"));  //精确查询
-});
+	window.onload=window.onresize=function(){
+		var h = $(".hint").outerWidth();
+		$(".hint").css({"margin-left":-h/2});
+	}
+})
 //代理账户点击展开收缩
 function toggle(obj){
 	var count = 0;
@@ -25,28 +27,20 @@ function toggle(obj){
 		};
 		
 	});
-
 };
-
-function select(obj){
-	$.each(obj, function(index, item){
-		select1(item);
-	});
-};
-
 //下拉框
-function select1(obj,i){
-	//控制select框的缩放
+function select(obj){
+		//控制select框的缩放
+		
 	var status = 0;
-	obj = $(obj);
 	obj.on("click",function(e){
+		console.log(obj)
 		status ++;
-		console.log("one")
-		console.log(status)
 		e.stopPropagation();
 		e.cancelBubble=true;
 		if(status%2 == 0){
 			$(this).removeClass("select_on");
+//			$(this).find(".option").slideUp(200);
 		}else{
 			$(this).addClass("select_on");
 		}
